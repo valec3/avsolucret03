@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,58 +6,59 @@
 
 @layer base {
   :root {
-    --background: 45 20% 98%;
-    --foreground: 30 10% 15%;
+    --background: 240 20% 99%;
+    --foreground: 220 18% 12%;
 
-    --card: 45 30% 99%;
-    --card-foreground: 30 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 18% 12%;
 
-    --popover: 45 30% 99%;
-    --popover-foreground: 30 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 18% 12%;
 
-    --primary: 43 74% 49%;
-    --primary-foreground: 45 20% 98%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 15% 94%;
-    --secondary-foreground: 30 10% 25%;
+    --secondary: 40 46% 56%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 45 12% 92%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 215 16% 92%;
+    --muted-foreground: 215 12% 40%;
 
-    --accent: 43 74% 49%;
-    --accent-foreground: 45 20% 98%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 43 30% 85%;
-    --input: 43 20% 88%;
-    --ring: 43 74% 49%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 199 89% 48%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens */
-    --gold: 43 74% 49%;
-    --gold-light: 43 60% 70%;
-    --gold-dark: 43 80% 35%;
+    /* Custom tokens - DESIGN.md */
+    --gold: 40 46% 56%;
+    --gold-light: 40 65% 72%;
+    --gold-dark: 40 66% 28%;
     --cream: 45 30% 96%;
     --cream-dark: 45 20% 90%;
-    --charcoal: 30 10% 15%;
-    --charcoal-light: 30 8% 35%;
+    --charcoal: 220 18% 12%;
+    --charcoal-light: 215 12% 35%;
 
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(43 74% 55%), hsl(43 74% 45%));
-    --gradient-light: linear-gradient(180deg, hsl(45 30% 99%), hsl(45 20% 95%));
-    --gradient-hero: linear-gradient(135deg, hsl(45 30% 98%) 0%, hsl(43 20% 94%) 100%);
+    --gradient-gold: linear-gradient(135deg, #c5a059, #b38f48);
+    --gradient-light: linear-gradient(180deg, #ffffff, #f9f9ff);
+    --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f1f3fd 100%);
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(43 30% 70% / 0.3);
-    --shadow-card: 0 8px 30px -8px hsl(43 30% 60% / 0.2);
-    --shadow-gold: 0 4px 20px -4px hsl(43 74% 49% / 0.3);
-    --shadow-hover: 0 12px 40px -12px hsl(43 74% 49% / 0.25);
+    /* Shadows - DESIGN.md */
+    --shadow-soft: 0 1px 3px 0 rgba(30, 34, 41, 0.03), 0 8px 24px -4px rgba(30, 34, 41, 0.04);
+    --shadow-card: 0 4px 6px -1px rgba(30, 34, 41, 0.04), 0 20px 32px -8px rgba(30, 34, 41, 0.07);
+    --shadow-gold: 0 8px 20px -4px rgba(197, 160, 89, 0.25);
+    --shadow-hover: 0 8px 20px -4px rgba(2, 132, 199, 0.35);
 
     /* Typography */
-    --font-heading: 'Cormorant Garamond', Georgia, serif;
+    --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
@@ -183,4 +184,32 @@
   .animation-delay-600 {
     animation-delay: 600ms;
   }
+
+  /* DESIGN.md: Editorial & Surface Utilities */
+  .label-editorial {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .bento-tile {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(30, 34, 41, 0.03), 0 8px 24px -4px rgba(30, 34, 41, 0.04);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .bento-tile:hover {
+    box-shadow: 0 4px 6px -1px rgba(30, 34, 41, 0.04), 0 20px 32px -8px rgba(30, 34, 41, 0.07);
+    border-color: rgba(197, 160, 89, 0.35);
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(197, 160, 89, 0.2);
+  }
 }
+

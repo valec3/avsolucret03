@@ -1,40 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ClipboardCheck, Wrench, Gem, Sparkles, CheckCircle, Handshake } from 'lucide-react';
-
-const steps = [
-  {
-    icon: ClipboardCheck,
-    title: 'Evaluación',
-    description: 'Visitamos tu espacio para evaluar el estado de las superficies y determinar el tratamiento adecuado.',
-  },
-  {
-    icon: Wrench,
-    title: 'Preparación',
-    description: 'Preparamos el área de trabajo con los equipos y materiales necesarios para garantizar un proceso limpio.',
-  },
-  {
-    icon: Gem,
-    title: 'Pulido Diamantado',
-    description: 'Aplicamos técnicas de pulido con discos diamantados de diferentes granulometrías para restaurar el brillo.',
-  },
-  {
-    icon: Sparkles,
-    title: 'Vitrificado / Sellado',
-    description: 'Aplicamos productos profesionales para vitrificar o sellar la superficie según sus necesidades.',
-  },
-  {
-    icon: CheckCircle,
-    title: 'Acabado Final',
-    description: 'Realizamos los últimos detalles para lograr un acabado perfecto con brillo espejo.',
-  },
-  {
-    icon: Handshake,
-    title: 'Entrega y Recomendaciones',
-    description: 'Entregamos el trabajo terminado con recomendaciones de mantenimiento para prolongar los resultados.',
-  },
-];
+import { processSteps } from '@/data/process';
 
 const ProcessSection = () => {
   const ref = useRef(null);
@@ -67,7 +34,7 @@ const ProcessSection = () => {
           <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold via-gold to-gold/30 -translate-x-1/2 hidden lg:block" />
 
           <div className="space-y-8 lg:space-y-0">
-            {steps.map((step, index) => (
+            {processSteps.map((step, index) => (
               <motion.div
                 key={step.title}
                 initial={{ opacity: 0, y: 30 }}

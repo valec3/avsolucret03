@@ -1,276 +1,274 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   ArrowLeft,
   CheckCircle,
   AlertTriangle,
   Droplets,
-  Sparkles,
+  Layers,
+  Phone,
+  ShieldCheck,
+  CheckCircle2,
+  Clock
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
+import { companyData } from "@/data/company";
 
 const CuidadosMarmol = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="section-padding bg-cream">
-          <div className="container-custom max-w-4xl">
-            <Button variant="ghost" asChild className="mb-8">
-              <a href="/#blog" className="flex items-center gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Volver al Blog
-              </a>
-            </Button>
+    <div className="min-h-screen bg-white text-anthracite-900 selection:bg-diamond-100 selection:text-diamond-800">
+      <SEO
+        title="Cuidados Preventivos del Mármol: La Guía Definitiva contra el Ataque Ácido"
+        description="Aprenda cómo proteger el mármol contra el vinagre y los limpiadores corrosivos en Lima. Protocolos de pH neutro y pulido diamantado profesional."
+        canonical="https://avsolucret.com/blog/cuidados-marmol"
+        type="article"
+        image="https://avsolucret.com/blog/01-blog.png"
+        breadcrumbs={[
+          { name: "Inicio", path: "/" },
+          { name: "Blog Técnico", path: "/blog" },
+          { name: "Cuidados del Mármol", path: "/blog/cuidados-marmol" },
+        ]}
+        keywords={[
+          "cuidados del marmol lima",
+          "como limpiar marmol opaco",
+          "reparar manchas de limon en marmol",
+          "pulido de marmol san isidro",
+          "sellador para marmol peru",
+        ]}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: "Cuidados Preventivos del Mármol: La Guía Definitiva contra el Ataque Ácido",
+          image: "https://avsolucret.com/blog/01-blog.png",
+          author: {
+            "@type": "Person",
+            name: "Ing. Alejandro Vidal (CIP)",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "AV SOLUCRET",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://avsolucret.com/main/logo.png",
+            },
+          },
+          datePublished: "2026-10-01",
+        }}
+      />
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+      <Header activeTab="Blog" />
+
+      <main className="pt-28 lg:pt-36">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+          
+          {/* Breadcrumb / Back Link */}
+          <div className="mb-8">
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 text-xs font-heading font-semibold text-diamond-700 hover:text-diamond-800 transition-colors mb-6 group"
             >
-              <span className="inline-block px-3 py-1 rounded-full bg-gold/20 text-gold text-sm font-medium mb-4">
-                Mármol
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+              <span>Volver a la Biblioteca Técnica</span>
+            </Link>
+
+            <div className="flex flex-wrap items-center gap-2 mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-gold-50 border border-gold-200 text-gold-700 text-xs font-mono font-bold uppercase tracking-wider">
+                MÁRMOL & PIEDRA NOBLE
               </span>
-              <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Cuidados Preventivos del Mármol
-              </h1>
-              <p className="text-lg text-muted-foreground mb-8">
-                Guía completa de mantenimiento y cuidados para mantener tu
-                mármol en perfectas condiciones
-              </p>
-              <div className="relative w-full h-[400px] rounded-2xl overflow-hidden mb-12">
-                <img
-                  src="/blog/01-blog.png"
-                  alt="Cuidados del mármol"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
+              <span className="text-xs text-anthracite-400 font-sans">
+                Lectura técnica de 5 minutos • Octubre 2026
+              </span>
+            </div>
 
-            {/* Content */}
-            <motion.article
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="prose prose-lg max-w-none"
-            >
-              <div className="bg-card p-8 rounded-2xl border border-gold/20 mb-8">
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-                  <Sparkles className="w-6 h-6 text-gold" />
-                  ¿Por qué es importante cuidar el mármol?
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  El mármol es una piedra natural porosa y delicada que requiere
-                  cuidados específicos. Su belleza y elegancia pueden mantenerse
-                  por décadas con el mantenimiento adecuado. Al ser una roca
-                  calcárea, es sensible a ácidos y puede mancharse fácilmente si
-                  no se protege correctamente.
-                </p>
-              </div>
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-anthracite-900 tracking-tight leading-[1.15] mb-4">
+              Cuidados Preventivos del Mármol: <br className="hidden sm:inline" />
+              <span className="text-diamond-700">La Guía Definitiva contra el Ataque Ácido</span>
+            </h1>
 
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-gold" />
-                Cuidados Diarios Recomendados
-              </h2>
-
-              <div className="space-y-6 mb-12">
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    1. Limpieza diaria con productos neutros
-                  </h3>
-                  <p className="text-muted-foreground mb-3">
-                    Utiliza únicamente agua tibia y jabón neutro (pH 7) para la
-                    limpieza diaria. Evita productos de limpieza ácidos como
-                    vinagre, limón o limpiadores multiusos convencionales.
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Usa paños suaves de microfibra</li>
-                    <li>Evita estropajos o esponjas abrasivas</li>
-                    <li>Seca inmediatamente después de limpiar</li>
-                  </ul>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    2. Protección contra derrames
-                  </h3>
-                  <p className="text-muted-foreground mb-3">
-                    Limpia inmediatamente cualquier derrame, especialmente de
-                    líquidos ácidos como:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Jugo de frutas cítricas (naranja, limón)</li>
-                    <li>Vino, café y refrescos</li>
-                    <li>Productos de limpieza ácidos</li>
-                    <li>Productos de belleza (perfumes, esmaltes)</li>
-                  </ul>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    3. Uso de posavasos y manteles
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Protege tu mármol usando siempre posavasos bajo vasos y
-                    botellas. Utiliza manteles individuales o salvamanteles bajo
-                    platos calientes y objetos decorativos.
-                  </p>
-                </div>
-              </div>
-
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                <AlertTriangle className="w-6 h-6 text-gold" />
-                Qué NO hacer con el mármol
-              </h2>
-
-              <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-6 mb-12">
-                <ul className="space-y-3 text-foreground">
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>
-                      Nunca uses limpiadores ácidos (vinagre, limón, productos
-                      con amoníaco)
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>
-                      No utilices limpiadores abrasivos o polvos de limpieza
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>
-                      Evita colocar objetos calientes directamente sobre el
-                      mármol
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>
-                      No uses estropajos de metal o esponjas abrasivas
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>No dejes líquidos derramados sin limpiar</span>
-                  </li>
-                </ul>
-              </div>
-
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                <Droplets className="w-6 h-6 text-gold" />
-                Mantenimiento Preventivo
-              </h2>
-
-              <div className="space-y-6 mb-12">
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    Sellado profesional (cada 1-2 años)
-                  </h3>
-                  <p className="text-muted-foreground mb-3">
-                    El sellado es fundamental para proteger el mármol de manchas
-                    y humedad. Un sellador de calidad crea una barrera
-                    protectora invisible que:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Repele líquidos y previene manchas</li>
-                    <li>Facilita la limpieza diaria</li>
-                    <li>Protege contra la humedad</li>
-                    <li>Mantiene el brillo natural</li>
-                  </ul>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                    Pulido diamantado profesional
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Con el tiempo, el mármol puede perder su brillo por el
-                    tránsito y uso diario. El pulido diamantado restaura el
-                    brillo original eliminando micro-rayones y opacidad
-                    superficial. Se recomienda cada 2-3 años dependiendo del
-                    tránsito.
-                  </p>
-                </div>
-              </div>
-
-              <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
-                Preguntas Frecuentes
-              </h2>
-
-              <div className="space-y-4 mb-12">
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    ¿Cada cuánto debo sellar mi piso de mármol?
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Se recomienda sellar el mármol cada 1 a 2 años, dependiendo
-                    del tránsito. Zonas de alto tráfico pueden requerir sellado
-                    anual.
-                  </p>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    ¿Cómo puedo saber si mi mármol necesita sellado?
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Coloca unas gotas de agua sobre el mármol. Si el agua se
-                    absorbe en menos de 5 minutos, es hora de volver a sellar.
-                  </p>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    ¿El mármol opaco se puede recuperar?
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Sí, mediante pulido diamantado profesional se puede
-                    restaurar el brillo original del mármol eliminando la capa
-                    opaca superficial.
-                  </p>
-                </div>
-
-                <div className="bg-card p-6 rounded-xl border border-border">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    ¿Puedo usar cera para dar brillo al mármol?
-                  </h4>
-                  <p className="text-muted-foreground">
-                    No se recomienda. La cera puede crear una capa amarillenta
-                    con el tiempo y dificultar futuros tratamientos
-                    profesionales.
-                  </p>
-                </div>
-              </div>
-
-              {/* CTA Section */}
-              <div className="bg-gradient-to-r from-gold/10 to-gold/5 p-8 rounded-2xl border border-gold/30 text-center">
-                <h3 className="font-heading text-2xl font-bold text-foreground mb-4">
-                  ¿Necesitas restaurar tu mármol?
-                </h3>
-                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Contamos con el equipo y experiencia para devolver el brillo
-                  original a tus superficies de mármol. Solicita una evaluación
-                  gratuita.
-                </p>
-                <Button variant="gold" size="lg" asChild>
-                  <a
-                    href="https://wa.me/51961801932?text=Hola, necesito información sobre restauración de mármol"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Solicitar Cotización
-                  </a>
-                </Button>
-              </div>
-            </motion.article>
+            <p className="font-sans text-lg text-anthracite-600 leading-relaxed border-l-4 border-gold-500 pl-4 py-1 italic bg-gold-50/30 rounded-r-lg">
+              "El mármol es una roca metamórfica calcárea viva. Cualquier líquido con pH inferior a 7 no 'ensucia' la superficie: desintegra químicamente el carbonato de calcio."
+            </p>
           </div>
-        </section>
+
+          {/* Hero Image */}
+          <div className="relative w-full h-[320px] sm:h-[420px] rounded-2xl overflow-hidden border border-slate-200 shadow-ambient mb-12 bg-slate-100">
+            <img
+              src="/blog/01-blog.png"
+              alt="Cuidados preventivos del mármol en interiores"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent text-white text-xs flex items-center justify-between">
+              <span>Superficie de mármol Blanco Carrara tratada con nanopolímero hidrófugo.</span>
+              <span className="font-mono text-gold-400 font-bold">AV SOLUCRET LAB</span>
+            </div>
+          </div>
+
+          {/* Body Content */}
+          <div className="space-y-8 font-sans text-anthracite-700 leading-relaxed text-sm sm:text-base">
+            
+            {/* Box 1 */}
+            <div className="bg-surface-low p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-sm">
+              <h2 className="font-heading text-xl sm:text-2xl font-bold text-anthracite-900 mb-3 flex items-center gap-2.5">
+                <Layers className="w-5 h-5 text-gold-600" />
+                ¿Por qué es fundamental cuidar el mármol con rigor técnico?
+              </h2>
+              <p className="text-anthracite-600 text-sm leading-relaxed">
+                El mármol está compuesto por más del 90% de <strong>carbonato de calcio ($CaCO_3$)</strong>. Al entrar en contacto con sustancias ácidas de uso doméstico cotidiano (vinagre, limón, gaseosas, salsa de tomate o perfumes), se produce una reacción de disolución química inmediata que crea cráteres microscópicos y elimina el brillo pulido de fábrica.
+              </p>
+            </div>
+
+            {/* Daily Care */}
+            <section className="space-y-4">
+              <h2 className="font-heading text-xl sm:text-2xl font-bold text-anthracite-900 flex items-center gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+                Protocolo de Mantenimiento Diario Recomendado
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h3 className="font-heading font-bold text-sm text-anthracite-900 mb-2">
+                    1. Limpieza de pH Neutro (7.0)
+                  </h3>
+                  <p className="text-xs text-anthracite-500 leading-relaxed mb-3">
+                    Utilice únicamente agua templada y jabón de pH neutro. Evite a toda costa detergentes con amoníaco, lejías o vinagres de limpieza.
+                  </p>
+                  <ul className="text-xs text-anthracite-600 space-y-1">
+                    <li>• Paños suaves de microfibra</li>
+                    <li>• Secado inmediato con mopa</li>
+                  </ul>
+                </div>
+
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h3 className="font-heading font-bold text-sm text-anthracite-900 mb-2">
+                    2. Retiro Inmediato de Derrames
+                  </h3>
+                  <p className="text-xs text-anthracite-500 leading-relaxed mb-3">
+                    Todo derrame debe ser absorbido por contacto (apoyando papel secante), nunca frotando en círculos para no extender la mancha.
+                  </p>
+                  <ul className="text-xs text-anthracite-600 space-y-1">
+                    <li>• Jugos cítricos y vino tinto</li>
+                    <li>• Café y cosméticos alcohólicos</li>
+                  </ul>
+                </div>
+
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h3 className="font-heading font-bold text-sm text-anthracite-900 mb-2">
+                    3. Protección Física Preventiva
+                  </h3>
+                  <p className="text-xs text-anthracite-500 leading-relaxed mb-3">
+                    Coloque fieltros adhesivos en las patas de mesas y sillas. En accesos desde el exterior, use felpudos atrapa-arena para evitar abrasión.
+                  </p>
+                  <ul className="text-xs text-anthracite-600 space-y-1">
+                    <li>• Posavasos bajo cristalería</li>
+                    <li>• Fieltros en mobiliario móvil</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Warning Box */}
+            <section className="p-6 rounded-2xl bg-red-50/70 border border-red-200 text-red-950 space-y-3">
+              <h3 className="font-heading font-bold text-base flex items-center gap-2 text-red-900">
+                <AlertTriangle className="w-5 h-5 text-red-600" />
+                Lo que NUNCA debes hacer sobre un piso de mármol
+              </h3>
+              <ul className="space-y-2 text-xs text-red-900">
+                <li className="flex items-start gap-2">
+                  <span className="font-bold text-red-600">✗</span>
+                  <span><strong>Nunca aplicar ácido muriático ni antisalitre corrosivo:</strong> quema la roca en segundos dejando una mancha blanca irreversible sin pulido.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="font-bold text-red-600">✗</span>
+                  <span><strong>Nunca usar ceras líquidas para "tapar rayones":</strong> la cera atrapa el polvo ambiental de Lima y amarillea con el calor en menos de un mes.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="font-bold text-red-600">✗</span>
+                  <span><strong>Nunca usar esponjas verdes abrasivas ni cepillos de alambre:</strong> rayan la superficie a nivel micro-métrico.</span>
+                </li>
+              </ul>
+            </section>
+
+            {/* FAQs Accordion-style cards */}
+            <section className="space-y-4 pt-4">
+              <h2 className="font-heading text-xl sm:text-2xl font-bold text-anthracite-900">
+                Preguntas Frecuentes sobre el Mantenimiento del Mármol
+              </h2>
+
+              <div className="space-y-3">
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h4 className="font-heading font-bold text-sm text-anthracite-900 mb-1">
+                    ¿Cada cuánto tiempo conviene realizar un pulido diamantado profesional?
+                  </h4>
+                  <p className="text-xs text-anthracite-600 leading-relaxed">
+                    En áreas residenciales de tránsito moderado, cada 3 a 5 años. En lobbies corporativos o restaurantes de alto tránsito, se sugiere mantenimiento semestral o anual con resinas de alto grano y nanosellado.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h4 className="font-heading font-bold text-sm text-anthracite-900 mb-1">
+                    ¿Cómo comprobar si el sellador del mármol sigue activo?
+                  </h4>
+                  <p className="text-xs text-anthracite-600 leading-relaxed">
+                    Realice la <em>Prueba de la Gota de Agua</em>: coloque unas gotas de agua en la superficie. Si al cabo de 5 a 10 minutos el agua se absorbe o oscurece la piedra, la red de sellado ha expirado y requiere reimpregnación molecular con AV-SHIELD™ Ultra.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
+                  <h4 className="font-heading font-bold text-sm text-anthracite-900 mb-1">
+                    ¿Se puede recuperar un mármol completamente opaco y manchado?
+                  </h4>
+                  <p className="text-xs text-anthracite-600 leading-relaxed">
+                    Absolutamente. El desbaste diamantado desbasta de 0.5 a 1.0 mm de la capa superficial dañada, revelando el estrato mineral sano con brillo de fábrica y sin generar nube de polvo gracias al sistema de aspiración Clase M.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Bottom CTA Banner */}
+            <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-anthracite-900 to-anthracite-800 text-white shadow-ambient">
+              <div className="max-w-2xl">
+                <span className="text-[10px] font-mono font-bold text-gold-400 tracking-widest uppercase">
+                  DIAGNÓSTICO IN SITU SIN COSTO EN LIMA
+                </span>
+                <h3 className="font-heading text-2xl font-extrabold text-white mt-1 mb-3">
+                  ¿Tu mármol perdió su reflejo o tiene manchas ácidas?
+                </h3>
+                <p className="text-xs text-anthracite-300 mb-6 leading-relaxed">
+                  Evaluamos el estado del poro y la profundidad del daño en tu domicilio con prueba de reflectancia in situ. Te explicamos exactamente qué fase de desbaste requiere sin sorpresas.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Button
+                    asChild
+                    className="bg-gold-500 hover:bg-gold-600 text-anthracite-900 font-heading font-bold text-xs px-5 py-2.5 rounded-lg shadow-sm"
+                  >
+                    <a
+                      href={companyData.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Consultar por WhatsApp
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="border-white/20 text-white hover:bg-white/10 font-heading text-xs px-5 py-2.5 rounded-lg"
+                  >
+                    <Link to="/contacto">Solicitar Visita Técnica</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
       </main>
+
       <Footer />
       <WhatsAppButton />
     </div>

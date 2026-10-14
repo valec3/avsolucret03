@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Master Core Pages -->
+  <url>
+    <loc>https://avsolucret.com/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-marmol.webp</image:loc>
+      <image:title>Pulido Diamantado de Mármol en Lima - AV SOLUCRET</image:title>
+      <image:caption>Restauración mecánica de pisos de mármol con pastillas diamantadas y cero polvo en Lima</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-terrazo.jpg</image:loc>
+      <image:title>Restauración de Terrazo Veneciano - AV SOLUCRET</image:title>
+      <image:caption>Nivelación y cristalizado termoquímico de terrazo clásico y losetas graníticas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-concreto.jpg</image:loc>
+      <image:title>Concreto Pulido y Densificado de Litio Industrial</image:title>
+      <image:caption>Tratamiento antipolvo y acabado espejo en losas industriales y cocheras en Lima</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/servicios</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-vitrificado.jpeg</image:loc>
+      <image:title>Protocolo de Pulido Diamantado en 7 Granos - AV SOLUCRET</image:title>
+      <image:caption>Secuencia progresiva desde grano 50 hasta grano 3000 para máximo brillo natural</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-granito.webp</image:loc>
+      <image:title>Pulido y Vitrificado de Granito Natural</image:title>
+      <image:caption>Corte con diamantes híbridos para minerales de alta dureza Mohs</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/trabajos</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-marmol-marfil.jpeg</image:loc>
+      <image:title>Restauración Mármol Crema Marfil en San Isidro</image:title>
+      <image:caption>Rescate de mármol dañado por ácidos domésticos alcanzando 92 GU de brillo natural</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-losetas-de-granito-terrazo.jpeg</image:loc>
+      <image:title>Recuperación de Terrazo Veneciano en Miraflores</image:title>
+      <image:caption>Nivelación de juntas y vitrificado en departamento clásico de Miraflores</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-marmol-travertino.jpeg</image:loc>
+      <image:title>Mármol Travertino con Masillado Epóxico en Surco</image:title>
+      <image:caption>Sellado de porosidad cavernosa y pulido diamantado semimate en Santiago de Surco</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/decapado-y-sellado-de-lajas.jpeg</image:loc>
+      <image:title>Decapado y Sellado Hidrofugante de Lajas en La Molina</image:title>
+      <image:caption>Eliminación de ceras amarillentas y protección nanotecnológica contra intemperie</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/nosotros</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/main/logo.png</image:loc>
+      <image:title>AV SOLUCRET S.A.C. - Ingeniería en Pisos Lima</image:title>
+      <image:caption>Empresa formal registrada RUC 20608549102 y dirección técnica con CIP Reg. 184652</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avsolucret.com/products/producto-main.jpg</image:loc>
+      <image:title>Tecnología AV-SHIELD Ultra Nanoprotector</image:title>
+      <image:caption>Sellador penetrante alifático libre de solventes agresivos</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/contacto</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-marmol.webp</image:loc>
+      <image:title>Diagnóstico Técnico Gratuito de Pisos en Lima</image:title>
+      <image:caption>Cotización y prueba técnica sin costo en San Isidro, Miraflores, Surco, San Borja y La Molina</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/blog/01-blog.png</image:loc>
+      <image:title>Centro de Conocimiento Técnico de Pisos y Minerales - AV SOLUCRET</image:title>
+      <image:caption>Artículos de divulgación técnica sobre patología, desbaste y mantenimiento de suelos</image:caption>
+    </image:image>
+  </url>
+
+  <!-- High-Intent Technical SEO Blog Articles -->
+  <url>
+    <loc>https://avsolucret.com/blog/pulido-diamantado-vs-ceras</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/blog/01-blog.png</image:loc>
+      <image:title>Pulido Diamantado vs Ceras Acrílicas - Comparativa Técnica</image:title>
+      <image:caption>Por qué las ceras atrapan suciedad y cómo el pulido diamantado resuelve el problema de raíz</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/cristalizado-vs-pulido-diamantado-diferencias</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-vitrificado.jpeg</image:loc>
+      <image:title>Cristalizado Químico vs Pulido Diamantado Mecánico</image:title>
+      <image:caption>Diferencias clave entre termoquímica con magnesio y desbaste abrasivo diamantado</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/restauracion-terrazo-veneciano-guia</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-terrazo.jpg</image:loc>
+      <image:title>Guía de Restauración de Terrazo Veneciano Antiguo</image:title>
+      <image:caption>Recuperación de marmolina y ligante de cemento Portland sin fisuras</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/concreto-pulido-industrial-superflat-lima</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-concreto.jpg</image:loc>
+      <image:title>Concreto Pulido Superflat Industrial en Lima</image:title>
+      <image:caption>Densificación con silicato de litio para resistencia a montacargas y alto tránsito</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/peligro-acido-muriatico-marmol-terrazo-reparacion</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-marmol-travertino.jpeg</image:loc>
+      <image:title>Peligro del Ácido Muriático en Mármol y Terrazo</image:title>
+      <image:caption>Rescate técnico ante quemaduras químicas por ácido clorhídrico</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/salitre-humedad-pisos-costa-lima</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/blog/02-blog.png</image:loc>
+      <image:title>Control de Salitre y Humedad en Pisos de la Costa de Lima</image:title>
+      <image:caption>Tratamiento de eflorescencia salina y barreras hidrófugas transpirables</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/cuidados-marmol</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/blog/01-blog.png</image:loc>
+      <image:title>Cuidados Preventivos del Mármol Natural</image:title>
+      <image:caption>Protocolo de limpieza con pH neutro y conservación de brillo</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/cuidados-porcelanato</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-porcelanato.webp</image:loc>
+      <image:title>Mantenimiento y Desmanchado de Porcelanato</image:title>
+      <image:caption>Limpieza profunda de microrrugosidades y sellado de fraguas</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/blog/cuidados-lajas</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/general/piso-lajas.webp</image:loc>
+      <image:title>Tratamiento de Piedras Rústicas y Lajas en Lima</image:title>
+      <image:caption>Sellado hidro-oleofugante y realce de tonalidades minerales</image:caption>
+    </image:image>
+  </url>
+
+  <!-- High-Intent Local SEO District Landing Pages (Service Area Business) -->
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-san-isidro</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-marmol-marfil.jpeg</image:loc>
+      <image:title>Pulido Diamantado de Mármol en San Isidro - AV SOLUCRET</image:title>
+      <image:caption>Servicio in situ de pulido y vitrificado de mármol sin polvo en residencias y oficinas de San Isidro</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-miraflores</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-losetas-de-granito-terrazo.jpeg</image:loc>
+      <image:title>Restauración de Terrazo y Mármol en Miraflores - AV SOLUCRET</image:title>
+      <image:caption>Tratamiento de pisos antiguos y protección contra salitre en malecones de Miraflores</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-surco</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-de-marmol-travertino.jpeg</image:loc>
+      <image:title>Pulido de Mármol Travertino en Santiago de Surco - AV SOLUCRET</image:title>
+      <image:caption>Masillado epóxico de porosidades y pulido al agua en Chacarilla y Monterrico</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-la-molina</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/decapado-y-sellado-de-lajas.jpeg</image:loc>
+      <image:title>Decapado y Sellado de Lajas en La Molina - AV SOLUCRET</image:title>
+      <image:caption>Eliminación de ceras quemadas y nanoprotección para terrazas exteriores en La Molina</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Legal & Regulatory Pages -->
+  <url>
+    <loc>https://avsolucret.com/politica-de-privacidad</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://avsolucret.com/terminos-y-condiciones</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

@@ -1,0 +1,4 @@
+# Cloudflare Pages Redirects & SPA Fallback
+# Static files in dist/ (SSG routes) take precedence automatically.
+# Any non-static route falls back to /index.html for React Router client routing.
+/*    /index.html   200
