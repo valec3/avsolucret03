@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { routesSeoData, RouteSeoConfig } from "../src/data/routes-seo.ts";
+import { routesSeoData } from "../src/data/routes-seo.ts";
+import type { RouteSeoConfig } from "../src/data/routes-seo.ts";
 import { companyData } from "../src/data/company.ts";
 
 const __filename = fileURLToPath(import.meta.url);

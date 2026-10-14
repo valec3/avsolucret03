@@ -1,4 +1,4 @@
-import { companyData } from "./company";
+import { companyData } from "./company.ts";
 
 export interface BreadcrumbItem {
   name: string;
