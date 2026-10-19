@@ -7,6 +7,9 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { companyData } from "@/data/company";
+import { homeFaqs } from "@/data/faq";
+import { servicesCatalogOffers } from "@/data/services";
+import { testimonialsOverview } from "@/data/testimonials";
 
 // Lazy loading de componentes bajo el pliegue para acelerar el primer render
 const ProcessSection = lazy(() => import("@/components/ProcessSection"));
