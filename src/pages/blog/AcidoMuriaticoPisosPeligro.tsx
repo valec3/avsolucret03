@@ -47,7 +47,7 @@ const AcidoMuriaticoPisosPeligro = () => {
           author: {
             "@type": "Person",
             name: "Ing. Alejandro Vidal",
-            jobTitle: "Ingeniero Especialista en Patología de Rocas (CIP)",
+            jobTitle: "Especialista en Tratamiento de Pisos",
           },
           publisher: {
             "@type": "Organization",

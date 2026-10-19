@@ -9,84 +9,104 @@ export interface FinishLevelOption {
 }
 
 export interface TechnicalPackage {
+  id: string;
+  planNumber: string;
   name: string;
+  subtitle: string;
   level: string;
   description: string;
   features: string[];
+  finish: string;
   highlight: boolean;
   warranty: string;
 }
 
-export const surfaces: SurfaceOption[] = [
-  { id: "marmol", name: "Mármol Natural" },
-  { id: "terrazo", name: "Terrazo Veneciano" },
-  { id: "granito", name: "Granito" },
-  { id: "concreto", name: "Concreto Arquitectónico" },
+export const materialsWorked: string[] = [
+  "Mármol",
+  "Granito",
+  "Granito leather",
+  "Terrazo",
+  "Mosaicos",
+  "Losetas de concreto",
+  "Concreto pulido industrial",
+  "Porcelanato",
+  "Travertino",
+  "Caliza",
+  "Cuarzo",
 ];
 
+export const surfaces: SurfaceOption[] = materialsWorked.map((mat) => ({
+  id: mat.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+  name: mat,
+}));
+
 export const finishLevels: FinishLevelOption[] = [
-  { id: "mantenimiento", name: "Mantenimiento & Cristalizado" },
-  { id: "restauracion", name: "Restauración Estándar" },
-  { id: "premium", name: "Espejo Diamantado Premium ★" },
+  { id: "basico", name: "Básico — Pulido de un grano y cera" },
+  { id: "cristalizado-plus", name: "Cristalizado Plus — Pulido progresivo y cristalizado en 2 capas" },
+  { id: "premium-alto-transito", name: "Premium alto tránsito — Densificado, resina y vitrificado en 3 capas" },
 ];
 
 export const technicalPackages: TechnicalPackage[] = [
   {
-    name: "Protocolo Básico",
-    level: "NIVEL DE INTERVENCIÓN 01",
-    description: "Mantenimiento preventivo y regeneración de brillo sin alterar la cota del piso.",
+    id: "basico",
+    planNumber: "PLAN 1",
+    name: "Básico",
+    subtitle: "Pulido de un grano y cera",
+    level: "PLAN 1",
+    description: "Permite emparejar el piso y quitarle la opacidad en piedras claras y oscuras.",
     features: [
-      "Cristalizado térmico libre de ceras químicas",
-      "Micro-diamantado superficial de grano fino",
-      "Aspirado HEPA 100% libre de polvo",
+      "Un solo paso de diamantado: empareja el piso y le quita la opacidad",
+      "Se termina con una capa de cera protectora",
+      "Sirve en piedras claras y oscuras",
+      "Acabado: natural a satinado, sin brillo espejo",
     ],
+    finish: "Natural a satinado, sin brillo espejo",
     highlight: false,
-    warranty: "Garantía de Reflectancia 6 Meses",
+    warranty: "Garantía de Servicio",
   },
   {
-    name: "Protocolo Estándar",
-    level: "NIVEL DE INTERVENCIÓN 02",
-    description: "Restauración para pisos con desgaste por tráfico, rayas superficiales y pérdida de brillo.",
+    id: "cristalizado-plus",
+    planNumber: "PLAN 2",
+    name: "Cristalizado Plus",
+    subtitle: "Pulido progresivo y cristalizado en 2 capas",
+    level: "PLAN 2 • MÁS POPULAR",
+    description: "Superficie nueva, más dura que la original con acabado tipo espejo antideslizante sin cera.",
     features: [
-      "Desbaste medio para eliminar arañazos y porosidad",
-      "Secuencia diamantada progresiva de 5 fases",
-      "Sellado protector contra manchas de uso diario",
+      "Diamantado completo, de grano grueso hasta el más fino",
+      "Dos capas de cristalizado aplicadas con máquina y lana de acero",
+      "Forma una superficie nueva, más dura que la original",
+      "Acabado: brillo espejo y antideslizante, sin cera que reponer",
     ],
-    highlight: false,
-    warranty: "Garantía Técnica 1 Año",
-  },
-  {
-    name: "Protocolo Espejo Premium",
-    level: "MÁXIMA CALIBRACIÓN • 7 FASES",
-    description: "Restauración integral. Máxima reflectancia espejo con protección nanoscópica permanente.",
-    features: [
-      "Nivelación micrométrica y pulido hasta grano 3000",
-      "Densificación con silicato de litio + AV-SHIELD™",
-      "Certificación con glossmetro digital (90+ GU)",
-    ],
+    finish: "Brillo espejo y antideslizante, sin cera que reponer",
     highlight: true,
-    warranty: "Garantía Escrita 5 Años",
+    warranty: "Garantía por Escrito",
   },
   {
-    name: "Protocolo Corporativo",
-    level: "GRAN ESCALA & LOGÍSTICA",
-    description: "Diseñado para complejos comerciales, clínicas, hoteles y plantas industriales.",
+    id: "premium-alto-transito",
+    planNumber: "PLAN 3",
+    name: "Premium alto tránsito",
+    subtitle: "Densificado, resina y vitrificado en 3 capas",
+    level: "PLAN 3 • MÁXIMA RESISTENCIA",
+    description: "Protección total y brillo espejo profundo para zonas de alto uso diario.",
     features: [
-      "Operación en turnos nocturnos sin parar el local",
-      "Operarios con seguro SCTR y homologaciones",
-      "Maquinaria planetaria de alto rendimiento",
+      "Diamantado completo hasta acabado espejo",
+      "Densificador: penetra en el piso y lo endurece por dentro, no solo en la superficie",
+      "Resina selladora: cierra el poro y frena las manchas de vino, café y aceite",
+      "Tres capas de vitrificado cristalizado, dejando reaccionar entre una y otra",
+      "Acabado: brillo espejo profundo y la mayor resistencia al uso diario",
     ],
+    finish: "Brillo espejo profundo y la mayor resistencia al uso diario",
     highlight: false,
-    warranty: "Acuerdo de Servicio Operacional",
+    warranty: "Garantía por Escrito de Alto Tránsito",
   },
 ];
 
 export const pricingEstimatorData = {
-  sectionBadge: "ESTÁNDARES DE ESPECIFICACIÓN Y ALCANCE",
-  title: "Protocolos Técnicos y Estimador de Alcance",
+  sectionBadge: "LOS TRES PLANES DE INTERVENCIÓN",
+  title: "Los Tres Planes",
   subtitle:
-    "Seleccioná el metraje y las condiciones de tu piso para proyectar el nivel de intervención adecuado. Todo trabajo cuenta con visita previa y muestra de brillo gratuita in situ.",
-  transparencyBadge: "PRESUPUESTO EXACTO TRAS DIAGNÓSTICO EN SITIO",
-  calculatorTitle: "Estimador Técnico de Superficie",
-  calculatorSubtitle: "Simulá el requerimiento de tu piso en Lima Metropolitana",
+    "Permite que te autocalifiques antes de escribirnos. Seleccioná el plan y el tipo de material para coordinar una cotización exacta.",
+  transparencyBadge: "COTIZACIÓN SIN COSTO • SIN COMPROMISO",
+  calculatorTitle: "Estimador Técnico de Metraje",
+  calculatorSubtitle: "Proyectá tu requerimiento en Lima Metropolitana y Callao",
 };

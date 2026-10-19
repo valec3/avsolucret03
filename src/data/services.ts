@@ -1,4 +1,4 @@
-import { Scale, Layers, Flame, Droplets, type LucideIcon } from "lucide-react";
+import { Scale, Layers, Flame, Droplets, Building2, Wrench, type LucideIcon } from "lucide-react";
 
 export interface ProtocolCardData {
   number: string;
@@ -20,59 +20,87 @@ export interface ProtocolCardData {
 export const protocols: ProtocolCardData[] = [
   {
     number: "01",
-    category: "PIEDRA NOBLE",
-    segmentBadge: "RESIDENCIAL + HOTELES",
-    title: "Pulido Diamantado de Mármol y Granito",
+    category: "SUPERFICIE ORIGINAL",
+    segmentBadge: "SIN POLVO EN EL AMBIENTE",
+    title: "Pulido diamantado",
     description:
-      "Eliminación de manchas ácidas, rayas y porosidad mediante resinas diamantadas importadas. Recuperación del tono original y sellado microporoso con acabado brillo espejo permanente.",
-    image: "/general/piso-marmol.webp",
-    imageTag: "CALIDAD HOSPITALARIA • REFLEXIÓN CLARA",
-    linkText: "Especificaciones de Mármol",
+      "Recuperación de pisos opacos, rayados o desnivelados mediante discos de diamante de grano progresivo. Devuelve la superficie original de la piedra sin aplicar recubrimientos. Trabajamos en húmedo y con aspiración: sin polvo en el ambiente.",
+    image: "/gallery/pulido-diamantado-marmol-blanco-carrara.jpg",
+    imageTag: "TRABAJAMOS EN HÚMEDO Y CON ASPIRACIÓN",
+    linkText: "Cotizar Pulido Diamantado",
     linkHref: "#contact",
   },
   {
     number: "02",
-    category: "PATRIMONIAL",
-    segmentBadge: "CASAS HISTÓRICAS • LOBBIES",
-    title: "Restauración de Pisos de Terrazo Veneciano",
+    category: "BRILLO ESPEJO",
+    segmentBadge: "ACABADO ANTIDESLIZANTE",
+    title: "Cristalizado",
     description:
-      "Nivelación de juntas y desbaste profundo para reavivar la vivacidad del grano de mármol o chip de cuarzo. Tratamiento antimanchas con sellado hidrofugante nanotecnológico.",
-    image: "/general/piso-terrazo.jpg",
-    linkText: "Ver Proceso de Terrazo",
+      "Tratamiento que endurece la superficie de la piedra y le devuelve el brillo tipo espejo. Reemplaza el encerado tradicional: no amarillea, no se pela y deja un acabado antideslizante.",
+    image: "/gallery/cristalizado-marmol-penthouse-vista-panoramica.jpg",
+    imageTag: "NO AMARILLEA • NO SE PELA",
+    linkText: "Cotizar Cristalizado",
     linkHref: "#contact",
   },
   {
     number: "03",
-    category: "INDUSTRIAL / LOGÍSTICO",
-    title: "Concreto Pulido y Densificado de Litio",
+    category: "SELLADO PENETRANTE",
+    segmentBadge: "PROTECCIÓN ANTIMANCHAS",
+    title: "Vitrificado y sellado",
     description:
-      "Transformación molecular mediante silicato de litio. Multiplica la dureza superficial (+300%), erradica el desprendimiento de polvo y reduce el costo de mantenimiento a cero.",
-    statBadge: {
-      value: "+300% Resistencia",
-      label: "Tráfico pesado de montacargas y showrooms",
-    },
-    linkText: "Catálogo Industrial",
+      "Cierre del poro de la piedra con resina y sellador penetrante. Protege de manchas de vino, café, aceite y humedad, y facilita la limpieza diaria. Indicado en cocinas, comedores, barras y zonas húmedas.",
+    image: "/gallery/vitrificado-sellado-mosaicos-decorativos-terraza.jpg",
+    imageTag: "COCINAS, COMEDORES Y ZONAS HÚMEDAS",
+    linkText: "Cotizar Vitrificado y Sellado",
     linkHref: "#contact",
   },
   {
     number: "04",
-    category: "CONSERVACIÓN PERIÓDICA",
-    segmentBadge: "PLANES CORPORATIVOS ANUALES",
-    title: "Mantenimiento Preventivo y Cristalizado Termoquímico",
+    category: "RECUPERACIÓN INTEGRAL",
+    segmentBadge: "SIN CAMBIAR EL PISO",
+    title: "Restauración de pisos deteriorados",
     description:
-      "Programas de mantenimiento para bancos, clínicas, hoteles y centros comerciales. Tratamiento termoquímico que preserva la reflectancia sin frenar las operaciones del edificio.",
-    pills: ["TURNOS NOCTURNOS", "SIN OLORES TÓXICOS", "TRÁFICO INMEDIATO"],
-    linkText: "Planes para Edificios",
+      "Pisos con manchas incrustadas, juntas abiertas, desniveles entre losetas o tratamientos anteriores mal aplicados. Diamantado, empastado de poros y recuperación del acabado, sin romper ni cambiar el piso.",
+    image: "/gallery/restauracion-terrazo-veneciano-diseno-olas.jpg",
+    imageTag: "EMPASTADO DE POROS Y NIVELACIÓN",
+    linkText: "Cotizar Restauración",
+    linkHref: "#contact",
+  },
+  {
+    number: "05",
+    category: "CORPORATIVO Y COMERCIAL",
+    segmentBadge: "PLAN PERIÓDICO",
+    title: "Mantenimiento de pisos para empresas",
+    description:
+      "Programa periódico para edificios, oficinas, hoteles, clínicas y locales comerciales. Visitas programadas de conservación del acabado en halls, escaleras, pasillos y zonas comunes, con informe técnico del estado de los pisos. Evita la intervención mayor y mantiene el inmueble presentable todo el año.",
+    image: "/gallery/mantenimiento-pisos-empresas-damero-restaurante.jpg",
+    imageTag: "TRABAJO POR SECTORES SIN DETENER OPERACIÓN",
+    pills: ["EDIFICIOS", "OFICINAS", "HOTELES", "CLÍNICAS", "LOCALES"],
+    linkText: "Cotizar Plan Empresas",
+    linkHref: "#contact",
+  },
+  {
+    number: "06",
+    category: "COCINA Y BAÑO",
+    segmentBadge: "INCLUIDO ACABADO LEATHER",
+    title: "Tableros y encimeras",
+    description:
+      "Pulido, sellado y recuperación de tableros de cocina y baño en granito, mármol y cuarzo, incluido el acabado leather. Tratamiento específico para manchas de grasa y absorción.",
+    image: "/gallery/pulido-sellado-tablero-granito-leather.jpg",
+    imageTag: "GRANITO, MÁRMOL Y CUARZO",
+    linkText: "Cotizar Tableros y Encimeras",
     linkHref: "#contact",
   },
 ];
 
 export const serviceCategories = [
   { id: "all", label: "Todos los Servicios" },
-  { id: "marmol", label: "Mármol y Granito" },
-  { id: "terrazo", label: "Terrazo Veneciano" },
-  { id: "concreto", label: "Concreto Pulido" },
-  { id: "cristalizado", label: "Cristalizado & Mantenimiento" },
+  { id: "pulido", label: "Pulido Diamantado" },
+  { id: "cristalizado", label: "Cristalizado" },
+  { id: "vitrificado", label: "Vitrificado y Sellado" },
+  { id: "restauracion", label: "Restauración Deteriorados" },
+  { id: "empresas", label: "Pisos para Empresas" },
+  { id: "tableros", label: "Tableros y Encimeras" },
 ];
 
 export const gritSequence = [
@@ -94,50 +122,78 @@ export interface DiagnosticCardData {
 
 export const diagnosticCards: DiagnosticCardData[] = [
   {
-    title: "Desbastado y Nivelación",
+    title: "Pulido diamantado",
     symptom:
-      "Para pisos con desniveles, tropiezos, cejas pronunciadas de obra o desprendimiento irregular de lechada.",
-    icon: Scale,
-    tag: "NIVELACIÓN FÍSICA",
-  },
-  {
-    title: "Pulido Diamantado",
-    symptom:
-      "Para superficies que han perdido su brillo por tráfico continuo, porosidad visible o envejecimiento de ceras.",
+      "Recuperación de pisos opacos, rayados o desnivelados mediante discos de diamante de grano progresivo en húmedo.",
     icon: Layers,
-    tag: "RESTAURACIÓN TOTAL",
+    tag: "SIN POLVO EN EL AMBIENTE",
   },
   {
-    title: "Cristalizado Espejo",
+    title: "Cristalizado",
     symptom:
-      "Ideal en sustratos sanos que requieren brillo ultra-reflectivo y protección contra micro-rayaduras cotidianas.",
+      "Endurece la superficie de la piedra y devuelve brillo tipo espejo antideslizante sin amarillear.",
     icon: Flame,
-    tag: "ALTO BRILLO PERIÓDICO",
+    tag: "BRILLO ESPEJO DURADERO",
   },
   {
-    title: "Sellador Hidrófugo",
+    title: "Vitrificado y sellado",
     symptom:
-      "Tratamiento esencial para evitar manchas permanentes de aceite, vino, café o salitre marino en interiores y terrazas.",
+      "Cierre del poro con resina y sellador penetrante. Protege contra manchas de vino, café, grasa y humedad.",
     icon: Droplets,
-    tag: "PROTECCIÓN QUÍMICA",
+    tag: "PROTECCIÓN PENETRANTE",
+  },
+  {
+    title: "Restauración de deteriorados",
+    symptom:
+      "Diamantado, empastado de poros y nivelación de juntas abiertas o manchas incrustadas sin romper ni cambiar el piso.",
+    icon: Scale,
+    tag: "SIN CAMBIAR EL PISO",
+  },
+  {
+    title: "Mantenimiento para empresas",
+    symptom:
+      "Visitas programadas con informe técnico en halls, escaleras y pasillos sin detener la operación de su negocio.",
+    icon: Building2,
+    tag: "PLANES CORPORATIVOS",
+  },
+  {
+    title: "Tableros y encimeras",
+    symptom:
+      "Pulido, sellado y rescate contra absorción y manchas de grasa en mármol, granito y cuarzo, incluido acabado leather.",
+    icon: Wrench,
+    tag: "COCINAS Y BAÑOS",
   },
 ];
 
 export const servicesCatalogOffers = [
   {
-    name: "Pulido Diamantado de Mármol y Granito",
-    description: "Nivelación y rectificación de mármol con discos resinados hasta grano 3000.",
+    name: "Pulido diamantado",
+    description:
+      "Recuperación de pisos opacos, rayados o desnivelados mediante discos de diamante de grano progresivo. Trabajamos en húmedo y con aspiración: sin polvo en el ambiente.",
   },
   {
-    name: "Restauración de Terrazo Veneciano",
-    description: "Curación de fisuras estructurales, micro-nivelación y brillo cerámico.",
+    name: "Cristalizado",
+    description:
+      "Tratamiento que endurece la superficie de la piedra y le devuelve el brillo tipo espejo. Reemplaza el encerado tradicional: no amarillea, no se pela y deja un acabado antideslizante.",
   },
   {
-    name: "Concreto Pulido y Densificado con Litio",
-    description: "Tratamiento Superflat para estacionamientos y complejos industriales.",
+    name: "Vitrificado y sellado",
+    description:
+      "Cierre del poro de la piedra con resina y sellador penetrante. Protege de manchas de vino, café, aceite y humedad, y facilita la limpieza diaria.",
   },
   {
-    name: "Sellado Nanométrico AV-SHIELD™ Ultra",
-    description: "Blindaje oleofóbico e hidrofóbico respirable no ocluyente.",
+    name: "Restauración de pisos deteriorados",
+    description:
+      "Pisos con manchas incrustadas, juntas abiertas o desniveles entre losetas. Diamantado, empastado de poros y recuperación del acabado, sin romper ni cambiar el piso.",
+  },
+  {
+    name: "Mantenimiento de pisos para empresas",
+    description:
+      "Programa periódico para edificios, oficinas, hoteles, clínicas y locales comerciales con informe técnico. Evita la intervención mayor y mantiene el inmueble presentable todo el año.",
+  },
+  {
+    name: "Tableros y encimeras",
+    description:
+      "Pulido, sellado y recuperación de tableros de cocina y baño en granito, mármol y cuarzo, incluido el acabado leather. Tratamiento específico para manchas de grasa y absorción.",
   },
 ];

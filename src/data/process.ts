@@ -1,40 +1,44 @@
-import { ClipboardCheck, Wrench, Gem, ShieldCheck, CheckCircle, Handshake, type LucideIcon } from "lucide-react";
+import { ShieldCheck, Layers, Paintbrush, Award, type LucideIcon } from "lucide-react";
 
 export interface ProcessStep {
+  number: string;
   icon: LucideIcon;
   title: string;
   description: string;
+  tag?: string;
 }
 
 export const processSteps: ProcessStep[] = [
   {
-    icon: ClipboardCheck,
-    title: "Evaluación",
-    description: "Visitamos tu espacio para evaluar el estado de las superficies y determinar el tratamiento adecuado.",
-  },
-  {
-    icon: Wrench,
-    title: "Preparación",
-    description: "Preparamos el área de trabajo con los equipos y materiales necesarios para garantizar un proceso limpio.",
-  },
-  {
-    icon: Gem,
-    title: "Pulido Diamantado",
-    description: "Aplicamos técnicas de pulido con discos diamantados de diferentes granulometrías para restaurar el brillo.",
-  },
-  {
+    number: "1",
     icon: ShieldCheck,
-    title: "Vitrificado / Sellado",
-    description: "Aplicamos productos profesionales para vitrificar o sellar la superficie según sus necesidades.",
+    title: "Evaluamos y protegemos",
+    description:
+      "Identificamos el tipo de piedra y su estado. Hacemos una prueba en zona poco visible que usted aprueba antes de continuar. Cubrimos zócalos, puertas y mobiliario.",
+    tag: "DIAGNÓSTICO Y PROTECCIÓN",
   },
   {
-    icon: CheckCircle,
-    title: "Acabado Final",
-    description: "Realizamos los últimos detalles para lograr un acabado perfecto con brillo espejo.",
+    number: "2",
+    icon: Layers,
+    title: "Diamantado progresivo",
+    description:
+      "Discos de diamante de grano grueso a fino. Los primeros emparejan y quitan rayas hondas; los últimos afinan hasta que aparece el brillo. En húmedo y con aspiración.",
+    tag: "EN HÚMEDO Y CON ASPIRACIÓN",
   },
   {
-    icon: Handshake,
-    title: "Entrega y Recomendaciones",
-    description: "Entregamos el trabajo terminado con recomendaciones de mantenimiento para prolongar los resultados.",
+    number: "3",
+    icon: Paintbrush,
+    title: "Empastado, si corresponde",
+    description:
+      "En mosaicos, terrazo y concreto rellenamos los poros con pasta del color de la loseta y dejamos curar antes de seguir puliendo.",
+    tag: "RELLENO DE POROS",
+  },
+  {
+    number: "4",
+    icon: Award,
+    title: "Acabado según el plan",
+    description:
+      "Encerado, cristalizado o vitrificado. Al entregar dejamos una guía de cuidados con los plazos y los productos que debe y no debe usar.",
+    tag: "GUÍA DE CUIDADOS INCLUIDA",
   },
 ];

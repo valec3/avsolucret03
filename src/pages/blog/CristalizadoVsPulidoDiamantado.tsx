@@ -48,7 +48,7 @@ const CristalizadoVsPulidoDiamantado = () => {
           author: {
             "@type": "Person",
             name: "Ing. Alejandro Vidal",
-            jobTitle: "Gerente Técnico (CIP)",
+            jobTitle: "Dirección Técnica",
           },
           publisher: {
             "@type": "Organization",

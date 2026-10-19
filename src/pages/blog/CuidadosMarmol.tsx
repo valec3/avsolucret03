@@ -46,7 +46,7 @@ const CuidadosMarmol = () => {
           image: "https://avsolucret.com/blog/01-blog.png",
           author: {
             "@type": "Person",
-            name: "Ing. Alejandro Vidal (CIP)",
+            name: "Equipo Técnico AV Solucret",
           },
           publisher: {
             "@type": "Organization",

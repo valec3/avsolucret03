@@ -3,33 +3,39 @@ import { ShieldCheck, FileCheck2, Lock, type LucideIcon } from "lucide-react";
 export const limaDistricts = [
   "San Isidro",
   "Miraflores",
-  "Santiago de Surco",
   "San Borja",
+  "Surco",
   "La Molina",
   "Barranco",
-  "Magdalena del Mar",
-  "Jesús María",
+  "Magdalena",
   "San Miguel",
   "Pueblo Libre",
   "Lince",
-  "Surquillo",
-  "Callao / Bellavista",
-  "Chorrillos",
-  "Ate / Vitarte",
-  "Lurín / Pachacamac",
-  "Lima Norte (Los Olivos, Independencia)",
-  "Asia / Playas del Sur",
-  "Otra Zona / Provincia",
+  "Jesús María",
+  "Breña",
+  "Cercado de Lima",
+  "La Victoria",
+  "San Luis",
+  "Ate",
+  "Santa Anita",
+  "Los Olivos",
+  "San Martín de Porres",
+  "Callao",
+  "Otro distrito de Lima Metropolitana",
 ];
 
 export const mineralSurfaces = [
-  "Mármol (Carrara, Marfil, Travertino)",
-  "Terrazo Veneciano Tradicional",
-  "Concreto Pulido / Superflat Industrial",
-  "Granito Natural",
-  "Lajas y Piedras Rústicas",
-  "Porcelanato de Alto Tránsito",
-  "Mosaicos Empastados Rossello",
+  "Mármol",
+  "Granito",
+  "Granito leather",
+  "Terrazo",
+  "Mosaicos",
+  "Losetas de concreto",
+  "Concreto pulido industrial",
+  "Porcelanato",
+  "Travertino",
+  "Caliza",
+  "Cuarzo",
 ];
 
 export interface ContactRoadmapStep {
@@ -43,27 +49,27 @@ export interface ContactRoadmapStep {
 export const contactRoadmap: ContactRoadmapStep[] = [
   {
     step: "01",
-    title: "Diagnóstico Inicial",
-    subtitle: "POR WHATSAPP EN 15 MIN",
+    title: "Contacto y Consulta",
+    subtitle: "POR WHATSAPP EN EL DÍA",
     description:
-      "Envianos fotos o vídeos de tu piso junto con el metraje aproximado. Un ingeniero evalúa el desgaste y te brinda un rango técnico preliminar inmediato.",
-    benefit: "Respuesta en <15 min",
+      "Envíenos fotos o el metraje de su piso por WhatsApp. Le damos un estimado el mismo día sin costo.",
+    benefit: "Respuesta en el día",
   },
   {
     step: "02",
-    title: "Visita In Situ y Muestra Gratuita",
+    title: "Evaluación y Prueba In Situ",
     subtitle: "SIN COSTO NI COMPROMISO",
     description:
-      "Coordinamos una inspección presencial en tu inmueble. Medimos la planimetría, revisamos juntas y realizamos una prueba de brillo real sobre una baldosa.",
-    benefit: "Prueba de brillo sin costo",
+      "Identificamos el tipo de piedra y su estado. Hacemos una prueba en zona poco visible que usted aprueba antes de continuar.",
+    benefit: "Prueba previa gratuita",
   },
   {
     step: "03",
     title: "Propuesta Formal y Garantía",
-    subtitle: "PRESUPUESTO CERRADO Y GARANTIZADO",
+    subtitle: "PRESUPUESTO CERRADO Y GARANTÍA ESCRITA",
     description:
-      "Te entregamos una cotización formal detallada con cronograma de obra, protocolo diamantado específico y certificado de garantía escrita por hasta 5 años.",
-    benefit: "Garantía formal por escrito",
+      "Entregamos propuesta detallada y al culminar el trabajo dejamos garantía por escrito y guía de cuidados específica.",
+    benefit: "Garantía por escrito",
   },
 ];
 
@@ -76,25 +82,25 @@ export interface InstitutionalGuarantee {
 export const institutionalGuarantees: InstitutionalGuarantee[] = [
   {
     icon: ShieldCheck,
-    title: "Personal Asegurado con SCTR",
-    desc: "100% de operarios con póliza de salud y pensión al día, EPP certificado y habilitación para faenas residenciales y corporativas.",
+    title: "Trabajamos sin polvo",
+    desc: "Pulido en húmedo con aspiración continua. No hay que desocupar la vivienda ni cubrir todo el mobiliario.",
   },
   {
     icon: FileCheck2,
-    title: "Contrato y Facturación Legal",
-    desc: "Empresa constituida con RUC formal, actas de entrega técnica y comprobantes de pago de ley.",
+    title: "Empresa formal y factura de ley",
+    desc: "MV Arquitectura & Construcción S.A.C. (RUC 20602100198) con equipo técnico propio y garantía por escrito.",
   },
   {
     icon: Lock,
-    title: "Privacidad y Confidencialidad",
-    desc: "Tus datos e imágenes de obra son tratados bajo estricta reserva y cumplimiento de la Ley N° 29733 de Protección de Datos Personales.",
+    title: "Sin detener su operación",
+    desc: "En empresas trabajamos por sectores y en horarios de baja afluencia. Cada tramo queda transitable al terminar.",
   },
 ];
 
 export const contactHeroData = {
-  badge: "ATENCIÓN EN TODO LIMA METROPOLITANA Y PROVINCIAS",
-  titlePrefix: "¿LISTO PARA TRANSFORMAR",
-  titleHighlight: "TUS SUPERFICIES?",
+  badge: "ATENCIÓN EN TODO LIMA METROPOLITANA Y CALLAO",
+  titlePrefix: "COTIZACIÓN Y DIAGNÓSTICO",
+  titleHighlight: "SIN COSTO",
   subtitle:
-    "Respuesta promedio en menos de 15 minutos. Envíanos fotos o metraje de tu piso para una evaluación petrográfica inicial y presupuesto formal preliminar sin compromiso.",
+    "Para viviendas: mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día. Para empresas: visitamos su local y entregamos propuesta con metraje, tratamiento recomendado y precio por m².",
 };

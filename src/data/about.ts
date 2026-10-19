@@ -1,4 +1,4 @@
-import { Shield, Award, FileCheck2, Leaf, type LucideIcon } from "lucide-react";
+import { Shield, Award, FileCheck2, Clock, type LucideIcon } from "lucide-react";
 
 export interface TimelineEvent {
   year: string;
@@ -22,77 +22,82 @@ export interface MethodologyStep {
 
 export const timelineEvents: TimelineEvent[] = [
   {
-    year: "2014",
-    tag: "FUNDACIÓN EN LIMA",
+    year: "2022",
+    tag: "INICIO DE OPERACIONES",
     description:
-      "Iniciamos operaciones introduciendo el desbaste con copas de diamante importadas en proyectos residenciales de Miraflores y San Isidro.",
+      "Desde 2022 atendiendo viviendas, edificios y empresas en Lima, con equipo técnico propio y empresa formal.",
   },
   {
-    year: "2018",
-    tag: "ESPECIALIZACIÓN CLÍNICA Y MINERA",
+    year: "SIN POLVO",
+    tag: "TECNOLOGÍA EN HÚMEDO",
     description:
-      "Incorporación de aspiración ciclónica HEPA industrial de grado clínico. Los trabajos de pulido pasan a ejecutarse sin desalojar inmuebles ni manchar mobiliario.",
+      "Pulido en húmedo con aspiración. No hay que desocupar la vivienda ni cubrir todo el mobiliario.",
   },
   {
-    year: "+150,000 m²",
-    tag: "HITO DE METRAJE",
+    year: "POR ESCRITO",
+    tag: "GARANTÍA Y CUIDADOS",
     description:
-      "Alcanzamos más de cien mil metros cuadrados intervenidos entre terrazo veneciano patrimonial, mármol travertino y áreas de concreto masivo industrial.",
+      "Cada servicio se entrega con su garantía y una guía de cuidados específica para el material tratado.",
   },
   {
-    year: "2024",
-    tag: "LIDERAZGO CORPORATIVO",
+    year: "EMPRESAS",
+    tag: "CONTINUIDAD OPERATIVA",
     description:
-      "Consolidación como la contratista técnica predilecta para estudios de arquitectura, retail premium, clubes sociales y sedes bancarias en el Perú.",
+      "En empresas trabajamos por sectores y en horarios de baja afluencia. Cada tramo queda transitable al terminar la jornada.",
   },
 ];
 
 export const guarantees: GuaranteeItem[] = [
   {
     icon: Shield,
-    title: "Protocolo Cero Polvo",
-    subtitle: "FILTRADO HEPA CLASE M",
-    desc: "Turbinas ciclónicas con microfiltros HEPA acopladas directamente a las bocas de desbaste. Cero polvo técnico suspendido en obra.",
-    check: "Seguro para habitar",
-  },
-  {
-    icon: FileCheck2,
-    title: "Seguro SCTR al Día",
-    subtitle: "CONFORMIDAD LABORAL",
-    desc: "El 100% de nuestros operadores cuenta con póliza SCTR (Salud y Pensión) vigente, EPP certificado y exámenes médicos para faenas corporativas.",
-    check: "Habilitación inmediata",
+    title: "Trabajamos sin polvo",
+    subtitle: "PULIDO EN HÚMEDO CON ASPIRACIÓN",
+    desc: "Pulido en húmedo con aspiración de alta eficiencia. No hay que desocupar la vivienda ni cubrir todo el mobiliario.",
+    check: "Sin polvo en el ambiente",
   },
   {
     icon: Award,
-    title: "Garantía Escrita 5 Años",
-    subtitle: "RESPALDO CONTRACTUAL",
-    desc: "Certificado de garantía respaldado por factura y contrato. Garantizamos la fijación nanotecnológica y la no delaminación de poros.",
-    check: "Acta de Conformidad",
+    title: "Garantía por escrito",
+    subtitle: "GUÍA DE CUIDADOS INCLUIDA",
+    desc: "Cada servicio se entrega con su garantía por escrito y una guía de cuidados específica para el material tratado.",
+    check: "Garantía certificada",
   },
   {
-    icon: Leaf,
-    title: "Química LEED®",
-    subtitle: "CERTIFICACIÓN ECOLÓGICA",
-    desc: "Formulaciones de densificación y cristalizado acuoso de nulo olor y bajo VOC, compatibles con créditos de certificación LEED.",
-    check: "100% inocuo para la salud",
+    icon: Clock,
+    title: "Sin detener su operación",
+    subtitle: "CONTINUIDAD COMERCIAL",
+    desc: "En empresas trabajamos por sectores y en horarios de baja afluencia. Cada tramo queda transitable al terminar la jornada.",
+    check: "Tránsito habilitado",
+  },
+  {
+    icon: FileCheck2,
+    title: "Cuatro años de operación",
+    subtitle: "EMPRESA FORMAL",
+    desc: "Desde 2022 atendiendo en Lima con equipo técnico propio, personería jurídica formal (RUC 20602100198) y factura de ley.",
+    check: "Equipo técnico propio",
   },
 ];
 
 export const methodologySteps: MethodologyStep[] = [
   {
     step: "01",
-    title: "Diagnóstico Petrográfico",
-    desc: "Evaluamos la porosidad, carbonatación y micro-fisuras del pavimento existente para seleccionar la matriz de resina adecuada.",
+    title: "Evaluamos y protegemos",
+    desc: "Identificamos el tipo de piedra y su estado. Hacemos una prueba en zona poco visible que usted aprueba antes de continuar. Cubrimos zócalos, puertas y mobiliario.",
   },
   {
     step: "02",
-    title: "Secuencia Gradual Pro",
-    desc: "Pasos metódicos desde grano grueso metálico a híbrido y pads resinados 3000 para conseguir brillo natural cerámico sin cera.",
+    title: "Diamantado progresivo",
+    desc: "Discos de diamante de grano grueso a fino. Los primeros emparejan y quitan rayas hondas; los últimos afinan hasta que aparece el brillo. En húmedo y con aspiración.",
   },
   {
     step: "03",
-    title: "Sellado Hídro-Óleo Fugante",
-    desc: "Impregnación molecular no ocluyente: repele aceites, vinos, cafés y humedad sin alterar la textura respirable del suelo mineral.",
+    title: "Empastado, si corresponde",
+    desc: "En mosaicos, terrazo y concreto rellenamos los poros con pasta del color de la loseta y dejamos curar antes de seguir puliendo.",
+  },
+  {
+    step: "04",
+    title: "Acabado según el plan",
+    desc: "Encerado, cristalizado o vitrificado. Al entregar dejamos una guía de cuidados con los plazos y los productos que debe y no debe usar.",
   },
 ];
 
@@ -100,11 +105,11 @@ export const aboutMission = {
   number: "01",
   title: "Nuestra Misión",
   description:
-    "Transformar superficies degradadas en obras arquitectónicas de máxima reflectividad y durabilidad con procesos sustentables y libres de polvo tóxico, asegurando espacios habitables más limpios e higiénicos.",
+    "Recuperar y mantener pisos de mármol, granito, terrazo, mosaicos, porcelanato y concreto en viviendas, oficinas, hoteles y locales comerciales, trabajando sin polvo y garantizando un acabado de alta calidad.",
   commitmentsHeader: "COMPROMISOS OPERATIVOS",
   commitments: [
-    "Durabilidad de pulido profundo sin adición de ceras",
-    "Eliminación definitiva de capas de micro-amarilleo",
+    "Pulido en húmedo con aspiración para cero polvo en el ambiente",
+    "Entrega de garantía por escrito y guía de cuidados para cada cliente",
   ],
 };
 
@@ -112,23 +117,23 @@ export const aboutVision = {
   number: "02",
   title: "Nuestra Visión",
   description:
-    "Ser el referente indiscutible en restauración y pulido diamantado en el Perú, combinando artesanía de precisión y bioseguridad industrial, reconocidos por prolongar la vida útil de los pavimentos de lujo hasta por medio siglo.",
+    "Ser la empresa líder y de mayor confianza en pulido, cristalizado y mantenimiento de pisos en Lima Metropolitana y Callao, destacando por puntualidad, acabados de primer nivel y total transparencia técnica.",
   commitmentsHeader: "HORIZONTE NORMATIVO",
   commitments: [
-    "Mantenimiento preventivo planificado sin cerrar sedes",
-    "Estandarización técnica de cuadrilla bajo supervisión de ingeniería CIP",
+    "Mantenimiento para empresas por sectores y en horarios de baja afluencia",
+    "Estandarización de procesos con equipo técnico propio y empresa formal",
   ],
 };
 
 export const substrateHighlights = [
   {
-    category: "Mármoles y Calizas",
-    treatment: "Cristalización Termoquímica sin Ácidos",
+    category: "Mármoles y Granitos",
+    treatment: "Pulido Diamantado y Cristalizado Espejo",
     image: "/general/piso-marmol.webp",
   },
   {
-    category: "Terrazos y Granitos",
-    treatment: "Desbastado Plano y Sellado Silícico",
+    category: "Terrazos y Concretos",
+    treatment: "Empastado de Poros y Restauración",
     image: "/general/piso-terrazo.jpg",
   },
 ];

@@ -13,7 +13,6 @@ import {
   Car,
   FileCheck2,
   HardHat,
-  Sparkles as _Sparkles, // NEVER USE SPARKLE ICON
   SearchCheck,
   Check
 } from "lucide-react";
@@ -145,8 +144,8 @@ const DistritoLanding = ({ districtSlug }: DistritoLandingProps) => {
                     <span>Sin Polvo</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <HardHat className="w-4 h-4 text-gold-600 shrink-0" />
-                    <span>CIP 184652</span>
+                    <FileCheck2 className="w-4 h-4 text-gold-600 shrink-0" />
+                    <span>Garantía Escrita</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <FileCheck2 className="w-4 h-4 text-diamond-600 shrink-0" />

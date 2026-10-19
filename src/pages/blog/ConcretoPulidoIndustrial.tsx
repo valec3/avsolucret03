@@ -48,7 +48,7 @@ const ConcretoPulidoIndustrial = () => {
           author: {
             "@type": "Person",
             name: "Ing. Alejandro Vidal",
-            jobTitle: "Ingeniero Civil Colegiado (CIP)",
+            jobTitle: "Ingeniero Especialista en Superficies",
           },
           publisher: {
             "@type": "Organization",

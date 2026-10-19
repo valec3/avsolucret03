@@ -8,26 +8,31 @@ import { surfaces, finishLevels, technicalPackages } from "@/data/packages";
 const PricingSection = () => {
   const [area, setArea] = useState<number>(85);
   const [surface, setSurface] = useState<string>("marmol");
-  const [finish, setFinish] = useState<string>("premium");
+  const [finish, setFinish] = useState<string>("cristalizado-plus");
 
   // Estimador de tiempo de obra (en días laborales)
   const estimatedDays = area <= 50 ? "1 a 2 días" : area <= 120 ? "2 a 3 días" : "3 a 5 días";
-  const projectedGloss = finish === "premium" ? "92+ Gloss Units (Espejo Puro)" : "80+ Gloss Units";
+  const projectedGloss =
+    finish === "premium-alto-transito"
+      ? "Brillo espejo profundo (Máxima resistencia)"
+      : finish === "cristalizado-plus"
+      ? "Brillo espejo antideslizante (Sin cera)"
+      : "Natural a satinado (Sin brillo espejo)";
+
   const protocolName =
-    finish === "premium"
-      ? "Protocolo Diamantado 7 Fases + AV-SHIELD™ Ultra"
-      : finish === "restauracion"
-      ? "Protocolo Estándar 5 Fases"
-      : "Protocolo de Cristalizado Térmico";
+    finish === "premium-alto-transito"
+      ? "Plan 3: Premium alto tránsito — Densificado, resina y vitrificado en 3 capas"
+      : finish === "cristalizado-plus"
+      ? "Plan 2: Cristalizado Plus — Pulido progresivo y cristalizado en 2 capas"
+      : "Plan 1: Básico — Pulido de un grano y cera";
 
   const getWhatsAppMessage = () => {
     const surfaceName = surfaces.find((s) => s.id === surface)?.name || surface;
-    const text = `Hola AV SOLUCRET, utilicé el estimador técnico en su web:
+    const text = `Hola AV Solucret, utilicé el estimador técnico en su web:
 - Metraje aprox: ${area} m²
-- Superficie: ${surfaceName}
-- Acabado buscado: ${finish}
-- Protocolo sugerido: ${protocolName}
-Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotización formal.`;
+- Material: ${surfaceName}
+- Plan seleccionado: ${protocolName}
+Deseo coordinar una cotización sin costo para mis pisos.`;
     return `https://wa.me/51961801932?text=${encodeURIComponent(text)}`;
   };
 
@@ -40,25 +45,24 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-gold-600" />
             <span className="label-editorial text-gold-800 font-extrabold tracking-widest">
-              ESTÁNDARES DE ESPECIFICACIÓN Y ALCANCE
+              LOS TRES PLANES DE INTERVENCIÓN
             </span>
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-anthracite-900 tracking-tight leading-[1.15] mb-4">
-            Paquetes y Protocolos Técnicos
+            Los Tres Planes
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-anthracite-600 leading-relaxed font-medium">
-            Inversión inteligente por metro cuadrado en Lima Metropolitana. Sin costos
-            ocultos, con calibración instrumental y garantía formal por escrito.
+            Permite que usted se autocalifique antes de escribir. Elija el nivel que mejor responda al uso y estado de su piso:
           </p>
         </div>
 
-        {/* 4 Protocol Packages (CERO PRECIOS VISIBLES) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        {/* 3 Planes Exactos del PDF */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {technicalPackages.map((pkg, idx) => (
             <motion.div
-              key={pkg.name}
+              key={pkg.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -71,35 +75,43 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
             >
               {pkg.highlight && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-anthracite-900 text-white text-[10px] font-heading font-bold uppercase tracking-wider whitespace-nowrap shadow-sm">
-                  ★ MÁS SOLICITADO RESIDENCIAL
+                  ★ MÁS RECOMENDADO
                 </div>
               )}
 
               <div>
-                <span className="text-[10px] font-mono font-bold text-gold-700 uppercase tracking-widest block mb-2">
-                  {pkg.level}
-                </span>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="text-[11px] font-mono font-bold text-diamond-700 bg-diamond-50 px-2.5 py-0.5 rounded border border-diamond-200">
+                    {pkg.planNumber}
+                  </span>
+                  <span className="text-[10px] font-mono font-bold text-gold-700 uppercase tracking-wider">
+                    {pkg.level}
+                  </span>
+                </div>
 
-                <h3 className="font-heading text-xl font-extrabold text-anthracite-900 mb-2">
+                <h3 className="font-heading text-2xl font-extrabold text-anthracite-900 mb-1">
                   {pkg.name}
                 </h3>
+                <div className="text-xs font-heading font-semibold text-gold-700 mb-3">
+                  {pkg.subtitle}
+                </div>
 
                 <p className="text-xs text-anthracite-500 leading-relaxed mb-6">
                   {pkg.description}
                 </p>
 
-                {/* Warranty Badge */}
+                {/* Acabado Badge */}
                 <div className="mb-6 p-2.5 rounded-lg bg-white border border-slate-200/80 flex items-center gap-2">
                   <Shield className="w-4 h-4 text-gold-600 shrink-0" />
                   <span className="text-xs font-heading font-bold text-anthracite-800">
-                    {pkg.warranty}
+                    {pkg.finish}
                   </span>
                 </div>
 
                 {/* Features List */}
                 <ul className="space-y-2.5 mb-8">
                   {pkg.features.map((feat) => (
-                    <li key={feat} className="flex items-start gap-2 text-xs text-anthracite-600">
+                    <li key={feat} className="flex items-start gap-2 text-xs text-anthracite-700 font-medium">
                       <Check className="w-3.5 h-3.5 text-diamond-600 shrink-0 mt-0.5" />
                       <span>{feat}</span>
                     </li>
@@ -119,19 +131,19 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
               >
                 <a
                   href={`https://wa.me/51961801932?text=${encodeURIComponent(
-                    `Hola AV SOLUCRET, deseo solicitar diagnóstico in situ para el ${pkg.name}.`
+                    `Hola AV Solucret, deseo consultar por el ${pkg.planNumber}: ${pkg.name} (${pkg.subtitle}).`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Solicitar este Nivel
+                  Consultar {pkg.name} por WhatsApp
                 </a>
               </Button>
             </motion.div>
           ))}
         </div>
 
-        {/* Estimador Técnico de Metraje y Diagnóstico (SIN PRECIOS EN DINERO) */}
+        {/* Estimador Técnico de Metraje y Diagnóstico */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -150,19 +162,19 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                   </span>
                 </div>
                 <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-anthracite-900 tracking-tight">
-                  Estimador Técnico de Diagnóstico y Metraje
+                  Estimador Técnico de Metraje y Plan
                 </h3>
                 <p className="font-sans text-xs sm:text-sm text-anthracite-500 mt-1">
-                  Ajuste el metraje exacto y seleccione el tipo de piso para calcular el protocolo sugerido y el tiempo de obra requerido.
+                  Ajuste el metraje y seleccione el tipo de material para simular el plan requerido antes de escribirnos:
                 </p>
               </div>
 
-              {/* Slider de Metraje con Accesos Rápidos Táctiles */}
+              {/* Slider de Metraje */}
               <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/90 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
                   <div>
                     <label htmlFor="area-range-slider" className="text-xs font-heading font-extrabold text-anthracite-900 uppercase tracking-wider block">
-                      Área estimada del proyecto:
+                      Área aproximada del piso:
                     </label>
                     <span className="text-[11px] text-anthracite-600">
                       Seleccioná un metraje rápido o ajustá el control deslizante:
@@ -176,13 +188,12 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                   </div>
                 </div>
 
-                {/* Chips de Selección Rápida para Móvil y Desktop */}
                 <div className="grid grid-cols-4 gap-2 mb-4">
                   {[
                     { value: 30, label: "30 m²", desc: "Hall / Baño" },
                     { value: 80, label: "80 m²", desc: "Dpto / Sala" },
                     { value: 150, label: "150 m²", desc: "Casa / Dúplex" },
-                    { value: 300, label: "300+ m²", desc: "Corporativo" },
+                    { value: 300, label: "300+ m²", desc: "Empresas" },
                   ].map((preset) => (
                     <button
                       key={preset.value}
@@ -223,10 +234,10 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                 </div>
               </div>
 
-              {/* Selector de Material */}
+              {/* Selector de Material (11 Materiales del PDF) */}
               <div>
                 <label className="block text-xs font-heading font-bold text-anthracite-800 uppercase tracking-wider mb-2">
-                  Material o soporte a intervenir:
+                  Material que trabajamos:
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {surfaces.map((s) => (
@@ -246,10 +257,10 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                 </div>
               </div>
 
-              {/* Selector de Nivel de Acabado */}
+              {/* Selector de Plan */}
               <div>
                 <label className="block text-xs font-heading font-bold text-anthracite-800 uppercase tracking-wider mb-2">
-                  Nivel de acabado requerido:
+                  Plan de preferencia:
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {finishLevels.map((f) => (
@@ -275,10 +286,10 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
                   <span className="text-xs font-mono font-extrabold text-gold-800 uppercase tracking-wider">
-                    PROYECCIÓN DE OBRA
+                    RESUMEN DE ESTIMACIÓN
                   </span>
                   <span className="text-[10px] font-heading font-bold bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-md border border-emerald-300">
-                    Visita in situ 100% Gratuita
+                    Cotización sin Costo
                   </span>
                 </div>
 
@@ -287,7 +298,7 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                     <Layers className="w-5 h-5 text-diamond-600 shrink-0 mt-0.5" />
                     <div>
                       <div className="text-xs text-anthracite-600 font-bold uppercase tracking-wider">
-                        Protocolo Sugerido
+                        Plan Seleccionado
                       </div>
                       <div className="font-heading text-sm font-extrabold text-anthracite-900">
                         {protocolName}
@@ -299,7 +310,7 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                     <Clock className="w-5 h-5 text-gold-600 shrink-0 mt-0.5" />
                     <div>
                       <div className="text-xs text-anthracite-600 font-bold uppercase tracking-wider">
-                        Tiempo Estimado de Ejecución
+                        Tiempo Estimado
                       </div>
                       <div className="font-heading text-sm font-extrabold text-anthracite-900">
                         {estimatedDays} en obra
@@ -311,7 +322,7 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                     <Gauge className="w-5 h-5 text-diamond-600 shrink-0 mt-0.5" />
                     <div>
                       <div className="text-xs text-anthracite-600 font-bold uppercase tracking-wider">
-                        Reflectometría Proyectada
+                        Acabado Proyectado
                       </div>
                       <div className="font-heading text-sm font-extrabold text-anthracite-900">
                         {projectedGloss}
@@ -321,8 +332,7 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-surface-low border border-slate-200 text-xs text-anthracite-700 leading-relaxed mb-6 font-medium">
-                  🛡️ <strong>Insumo incluido:</strong> Nanosellador hidrofóbico{" "}
-                  <strong>AV-SHIELD™ Ultra</strong> y aspiración continua con retención HEPA 99.97%.
+                  🛡️ <strong>Garantía:</strong> Trabajamos sin polvo (en húmedo con aspiración) y entregamos garantía por escrito con guía de cuidados.
                 </div>
               </div>
 
@@ -337,13 +347,13 @@ Deseo agendar la visita de diagnóstico in situ sin costo para recibir su cotiza
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>Enviar Diagnóstico a WhatsApp para Cotizar</span>
+                    <span>Cotizar por WhatsApp con estos Datos</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
                 <div className="text-center mt-2.5 text-[11px] font-mono text-anthracite-600 flex items-center justify-center gap-1.5 font-medium">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span>Respuesta técnica estimada en &lt; 15 min</span>
+                  <span>Respuesta el mismo día</span>
                 </div>
               </div>
             </div>

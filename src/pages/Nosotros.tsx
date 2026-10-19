@@ -28,8 +28,8 @@ const Nosotros = () => {
   return (
     <div className="min-h-screen bg-white text-anthracite-900 selection:bg-diamond-100 selection:text-diamond-800">
       <SEO
-        title="Nosotros | Ingeniería de Superficies y Respaldo CIP"
-        description="Conozca nuestra trayectoria desde 2014, tecnología planetaria sin polvo, seguros SCTR y respaldo profesional del Ing. Alejandro Vidal (CIP Reg. 184652)."
+        title="Nosotros | AV Solucret - MV Arquitectura & Construcción S.A.C."
+        description="Conozca nuestra trayectoria desde 2022, tecnología de pulido en húmedo con aspiración sin polvo, empresa formal (RUC 20602100198) y garantía por escrito."
         canonical="https://avsolucret.com/nosotros"
         breadcrumbs={[
           { name: "Inicio", path: "/" },
@@ -37,20 +37,21 @@ const Nosotros = () => {
         ]}
         keywords={[
           "empresa de pulido de pisos lima",
-          "ingenieria de superficies peru",
-          "pulido de pisos sctr hepa",
-          "pulido de marmol colegiado cip",
+          "mv arquitectura y construccion sac",
+          "av solucret ruc 20602100198",
+          "pulido de pisos sin polvo lima",
+          "garantia por escrito pulido pisos",
         ]}
         schema={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          name: "Sobre AV SOLUCRET",
-          description: "Empresa peruana líder en pulido diamantado y restauración petrográfica en Lima Metropolitana.",
+          name: "Sobre AV Solucret",
+          description: "Empresa formal en Lima Metropolitana con equipo técnico propio, especializada en pulido, cristalizado y mantenimiento de pisos.",
           mainEntity: {
-            "@type": "Person",
-            name: "Ing. Alejandro Vidal",
-            jobTitle: "Gerente Técnico",
-            identifier: "CIP Reg. 184652",
+            "@type": "Organization",
+            name: companyData.name,
+            legalName: companyData.legalName,
+            taxID: companyData.ruc,
           },
         }}
       />
@@ -199,10 +200,10 @@ const Nosotros = () => {
                   </div>
                   <div>
                     <div className="font-heading text-2xl sm:text-3xl font-extrabold text-gold-600">
-                      12+
+                      4
                     </div>
                     <div className="text-[11px] font-bold uppercase tracking-wider text-anthracite-500 mt-0.5">
-                      Años de Oficio
+                      Años de Operación
                     </div>
                   </div>
                 </div>
@@ -221,7 +222,7 @@ const Nosotros = () => {
                     LÍNEA DE EVOLUCIÓN TÉCNICA
                   </span>
                   <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-anthracite-900 tracking-tight leading-tight">
-                    Una década redefiniendo los acabados arquitectónicos en Lima
+                    Cuatro años de operación elevando los acabados arquitectónicos en Lima
                   </h2>
                 </div>
 
@@ -525,7 +526,7 @@ const Nosotros = () => {
               </Button>
             </div>
 
-            {/* Sello Vectorial y Colegiatura CIP del Ing. Alejandro Vidal (Image 3) */}
+            {/* Respaldo Institucional y Empresa Formal */}
             <div className="inline-flex flex-col items-center pt-8 border-t border-slate-200/80">
               {/* Graphic Signature line */}
               <div className="w-36 h-8 text-gold-600/70 mb-2">
@@ -535,13 +536,13 @@ const Nosotros = () => {
               </div>
 
               <div className="font-heading text-sm font-extrabold text-anthracite-900 tracking-wide">
-                {companyData.engineer.name}
+                {companyData.name}
               </div>
               <div className="text-[11px] font-mono text-gold-700 font-semibold tracking-wider uppercase">
-                {companyData.engineer.role.toUpperCase()} AV SOLUCRET S.A.C.
+                {companyData.legalName}
               </div>
-              <div className="text-[10px] text-anthracite-400 tracking-tight mt-0.5">
-                Colegio de Ingenieros del Perú {companyData.engineer.cip}
+              <div className="text-[10px] text-anthracite-500 tracking-tight mt-0.5">
+                RUC {companyData.ruc} • Equipo Técnico Propio
               </div>
             </div>
 

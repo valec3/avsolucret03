@@ -78,9 +78,9 @@ function buildJsonLdSchema(route: RouteSeoConfig): string {
       description: route.description,
       image: route.image,
       author: {
-        "@type": "Person",
-        name: `Ing. Alejandro Vidal (${companyData.engineerCip})`,
-        jobTitle: "Ingeniero Especialista en Tratamiento de Suelos",
+        "@type": "Organization",
+        name: companyData.name,
+        url: "https://avsolucret.com",
       },
       publisher: {
         "@type": "Organization",

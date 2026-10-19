@@ -22,29 +22,45 @@ export const footerNavItems: NavItem[] = [
 ];
 
 export const coverageDistricts: string[] = [
-  "Miraflores",
   "San Isidro",
-  "Santiago de Surco",
-  "La Molina",
+  "Miraflores",
   "San Borja",
+  "Surco",
+  "La Molina",
   "Barranco",
   "Magdalena",
-  "Callao Industrial",
+  "San Miguel",
+  "Pueblo Libre",
+  "Lince",
+  "Jesús María",
+  "Breña",
+  "Cercado de Lima",
+  "La Victoria",
+  "San Luis",
+  "Ate",
+  "Santa Anita",
+  "Los Olivos",
+  "San Martín de Porres",
+  "Callao",
 ];
 
 export const companyData = {
-  name: "AV SOLUCRET",
-  legalName: "AV SOLUCRET S.A.C.",
-  tagline: "INGENIERÍA DE SUPERFICIES",
+  name: "AV Solucret",
+  brandName: "AV Solucret",
+  legalName: "MV Arquitectura & Construcción S.A.C.",
+  tagline: "Recubrimientos y cristalizados de superficies",
   phone: "961 801 932",
   phoneDisplay: "961 801 932",
-  email: "proyectos@avsolucret.pe",
-  address: "Servicio Técnico In Situ a Domicilio y Obra, Lima Metropolitana",
-  postalCode: "15001",
+  email: "contacto@avsolucret.com",
+  office: "Jr. Aguarico 424, of. 210 · Breña, Lima",
+  address: "Jr. Aguarico 424, of. 210, Breña, Lima",
+  postalCode: "15082",
   city: "Lima",
   country: "Perú",
   countryCode: "PE",
-  ruc: "20608549102",
+  ruc: "20602100198",
+  operatingSince: "2022",
+  yearsOfOperation: "4",
   hours: "Lun - Sáb: 7:00 AM - 7:00 PM",
   openingHoursSchema: [
     {
@@ -54,33 +70,67 @@ export const companyData = {
     },
   ],
   geo: {
-    latitude: -12.046374,
-    longitude: -77.042793,
+    latitude: -12.056944,
+    longitude: -77.051944,
+  },
+  technicalTeam: {
+    title: "Equipo Técnico AV Solucret",
+    role: "Dirección Técnica Especializada",
+    description: "Equipo técnico propio y empresa formal.",
   },
   engineer: {
-    name: "Ing. Alejandro Vidal",
-    role: "Gerente Técnico",
-    cip: "CIP Reg. 184652",
-    colegio: "Colegio de Ingenieros del Perú",
+    name: "Equipo Técnico AV Solucret",
+    role: "Dirección Técnica Especializada",
   },
   whatsappUrl:
-    "https://wa.me/51961801932?text=Hola%20AV%20SOLUCRET,%20deseo%20coordinar%20una%20visita%20t%C3%A9cnica%20gratuita%20para%20mis%20pisos.",
+    "https://wa.me/51961801932?text=Hola%20AV%20Solucret,%20deseo%20cotizar%20el%20mantenimiento%20de%20mis%20pisos.",
   social: {
     facebook: "https://www.facebook.com/share/17UfYYCQmq/?mibextid=wwXIfr",
     tiktok: "https://www.tiktok.com/@avsolucret",
     instagram: "https://www.instagram.com/av_solucret",
   },
+  instagramHandle: "@av_solucret",
   coverageDistricts,
+  coverageText:
+    "Atendemos todo Lima Metropolitana y Callao, en viviendas, edificios, oficinas, hoteles y locales comerciales.",
   districtsCoverage: [
     "Lima Metropolitana",
-    "San Isidro",
-    "Miraflores",
-    "Santiago de Surco",
-    "San Borja",
-    "La Molina",
-    "Barranco",
-    "Lurín",
     "Callao",
+    ...coverageDistricts,
   ],
-  guaranteeText: "Garantía Escrita y Personal con Seguro SCTR",
+  guaranteeText: "Garantía por escrito y guía de cuidados específica",
+  valueProps: [
+    {
+      title: "Cuatro años de operación",
+      description:
+        "Desde 2022 atendiendo viviendas, edificios y empresas en Lima, con equipo técnico propio y empresa formal.",
+    },
+    {
+      title: "Trabajamos sin polvo",
+      description:
+        "Pulido en húmedo con aspiración. No hay que desocupar la vivienda ni cubrir todo el mobiliario.",
+    },
+    {
+      title: "Garantía por escrito",
+      description:
+        "Cada servicio se entrega con su garantía y una guía de cuidados específica para el material tratado.",
+    },
+    {
+      title: "Sin detener su operación",
+      description:
+        "En empresas trabajamos por sectores y en horarios de baja afluencia. Cada tramo queda transitable al terminar la jornada.",
+    },
+  ],
+  closingCta: {
+    residential: {
+      title: "Residencial",
+      text: "Cotización sin costo. Mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día.",
+      cta: "Cotizar por WhatsApp",
+    },
+    companies: {
+      title: "Empresas",
+      text: "Diagnóstico técnico sin costo. Visitamos su local y entregamos una propuesta con metraje, tratamiento recomendado y precio por m².",
+      cta: "Solicitar diagnóstico técnico",
+    },
+  },
 };

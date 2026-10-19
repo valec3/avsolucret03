@@ -88,7 +88,7 @@ const SalitreHumedadPisosLima = () => {
                 5 min de lectura
               </span>
               <span>•</span>
-              <span>Por Ing. Alejandro Vidal (CIP)</span>
+              <span>Por Equipo Técnico AV Solucret</span>
             </div>
 
             <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-anthracite-900 tracking-tight leading-[1.15] mb-6">

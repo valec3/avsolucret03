@@ -7,54 +7,54 @@ export const homeFaqs: FAQItem[] = [
   {
     question: "¿El proceso de pulido diamantado genera polvo en paredes o muebles?",
     answer:
-      "No. Empleamos turbinas ciclónicas industriales con microfiltración HEPA Clase M acopladas herméticamente a la maquinaria planetaria. Todo el residuo abrasivo es retenido al 99.97% en la cámara de vacío sin suspender partículas en el aire. Es 100% seguro para habitar sin desalojar el inmueble ni cubrir todo con plásticos.",
+      "No. Trabajamos en húmedo y con aspiración continua: sin polvo en el ambiente. No hay que desocupar la vivienda ni cubrir todo el mobiliario. Es 100% seguro para habitar durante y después del trabajo.",
   },
   {
-    question: "¿Qué diferencia existe entre el pulido diamantado y el encerado convencional?",
+    question: "¿Qué diferencia existe entre el pulido diamantado / cristalizado y el encerado tradicional?",
     answer:
-      "El encerado crea una película plástica temporal que amarillea con el sol y se descascara a las pocas semanas. El pulido diamantado no aplica capas postizas: desgasta y alinea los propios cristales de calcita de la piedra mediante resinas de diamante sintético (hasta grano 3000), logrando un brillo espejo natural, vitrificado y de larga duración.",
+      "El encerado tradicional crea una película plástica temporal que con el tiempo amarillea, se descascara y requiere constante remoción. El cristalizado y pulido diamantado endurecen la superficie de la piedra y devuelven el brillo tipo espejo sin amarillear, no se pelan y dejan un acabado antideslizante sin cera que reponer.",
   },
   {
-    question: "¿Cuánto tiempo demora la intervención de un piso promedio (50 a 100 m²)?",
+    question: "¿En qué materiales realizan pulido, cristalizado y vitrificado?",
     answer:
-      "Un departamento o sala de 50 a 100 m² se completa en 1 a 2 días hábiles. Al no usar ceras que requieran secado prolongado, el piso es transitable inmediatamente después de la entrega técnica.",
+      "Trabajamos en mármol, granito, granito leather, terrazo, mosaicos, losetas de concreto, concreto pulido industrial, porcelanato, travertino, caliza y cuarzo. Tanto en pisos como en tableros y encimeras de cocina y baño.",
   },
   {
-    question: "¿La visita de diagnóstico in situ tiene algún costo en Lima?",
+    question: "¿La cotización o diagnóstico in situ tiene algún costo?",
     answer:
-      "La visita in situ es 100% gratuita y sin compromiso en todos los distritos de Lima Metropolitana y el Callao. Un técnico colegiado evalúa el soporte mineral, mide la humedad, inspecciona fisuras y realiza una prueba de reflectancia in situ.",
+      "No. Para residencias: mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día sin costo. Para empresas: realizamos diagnóstico técnico sin costo, visitamos su local y entregamos una propuesta con metraje, tratamiento recomendado y precio por m².",
   },
   {
-    question: "¿Entregan garantía formal por escrito y factura de ley?",
+    question: "¿Entregan garantía por escrito y son empresa formal?",
     answer:
-      "Sí. Somos una empresa formalmente constituida (RUC: 20608549102). Cada proyecto culminado recibe un Acta de Conformidad Técnica y un Certificado de Garantía por escrito de hasta 5 años respaldado contractualmente.",
+      "Sí. Somos una empresa formal registrada como MV Arquitectura & Construcción S.A.C. (RUC 20602100198). Cada servicio se entrega con su garantía por escrito y una guía de cuidados específica para el material tratado.",
   },
   {
-    question: "¿Qué cuidados requiere el piso luego de ser pulido por AV SOLUCRET?",
+    question: "¿Pueden realizar trabajos en empresas sin detener la operación?",
     answer:
-      "Gracias a la impregnación nanotecnológica AV-SHIELD™ Ultra, el mantenimiento es sumamente sencillo: trapeado húmedo regular únicamente con agua limpia o limpiador de pH neutro. Queda terminantemente prohibido el uso de ácido muriático, lejía pura o ceras comerciales que opacan la reflectancia.",
+      "Totalmente. En empresas trabajamos por sectores y en horarios de baja afluencia o turnos especiales. Cada tramo queda transitable al terminar la jornada para que su operación no se detenga.",
   },
 ];
 
 export const servicesFaqs: FAQItem[] = [
   {
-    question: "¿Cuánto dura realmente un pulido diamantado y qué garantía entregan?",
+    question: "¿Cuánto dura el tratamiento y qué garantía entregan?",
     answer:
-      "En entornos residenciales de tránsito medio, el brillo espejo obtenido mecánicamente perdura entre 3 a 5 años sin perder reflectancia, ya que no depende de películas plásticas ni ceras. En áreas comerciales de alto flujo, recomendamos un mantenimiento preventivo anual o semestral. Todos nuestros servicios de pulido diamantado integral incluyen garantía escrita formal contra delaminación o micro-amarilleo.",
+      "El acabado tipo espejo obtenido con cristalizado y diamantado no se pela ni amarillea, brindando una duración prolongada. Cada servicio se entrega con su garantía por escrito y una guía de cuidados con los plazos y productos recomendados para su conservación.",
   },
   {
-    question: "¿Interrumpen el trabajo preventivo los departamentos o casas habitadas?",
+    question: "¿Qué distritos cubren en Lima y Callao?",
     answer:
-      "No. Utilizamos maquinaria con extracción ciclónica hermética acoplada directamente a los platos rotativos de desbaste (con filtración HEPA clase M de 99.97% de retención). Esto significa que podemos intervenir su sala o comedor mientras usted permanece en el inmueble, sin generar nube de polvo sobre paredes, cuadros ni electrodomésticos.",
+      "Atendemos todo Lima Metropolitana y Callao: San Isidro, Miraflores, San Borja, Surco, La Molina, Barranco, Magdalena, San Miguel, Pueblo Libre, Lince, Jesús María, Breña, Cercado de Lima, La Victoria, San Luis, Ate, Santa Anita, Los Olivos, San Martín de Porres y demás distritos.",
   },
   {
-    question: "¿Cuál es el tiempo de secado y reactivación del tránsito tras el sellado?",
+    question: "¿Qué incluye la guía de cuidados al finalizar el trabajo?",
     answer:
-      "El pulido diamantado mecánico es de tránsito inmediato apenas la máquina culmina el paso del grano 3000. Al aplicar el nanosellador AV-SHIELD™ Ultra, se requiere un tiempo de curado al tacto de tan solo 45 a 60 minutos para tránsito peatonal ligero, y 12 horas para máxima retención oleofóbica contra derrames.",
+      "Al entregar dejamos una guía de cuidados específica para el material tratado con los plazos y los productos que debe y no debe usar, asegurando que el piso mantenga su brillo y protección.",
   },
   {
-    question: "¿Es necesario retirar muebles pesados o zócalos de las habitaciones?",
+    question: "¿Es necesario desocupar la casa o departamento?",
     answer:
-      "Muebles livianos y medianos se despejan por sectores de trabajo. En caso de piezas de gran porte (consolas pesadas o pianos), nuestras desbastadoras de orilla y pulidoras orbitales manuales calibradas permiten trabajar a milímetros del zócalo sin maltratar carpintería ni molduras de yeso.",
+      "No es necesario. Trabajamos sin polvo gracias al sistema de pulido en húmedo con aspiración. Cubrimos zócalos, puertas y mobiliario adyacente para total tranquilidad de su familia.",
   },
 ];

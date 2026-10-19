@@ -17,7 +17,6 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { companyData } from "@/data/company";
@@ -134,7 +133,7 @@ const Trabajos = () => {
         </section>
 
         {/* ========================================================================= */}
-        {/* DESTACADO ANTES / DESPUÉS (SHOWCASE INTERACTIVO) */}
+        {/* DESTACADO CASO EMBLEMÁTICO */}
         {/* ========================================================================= */}
         <section className="py-16 lg:py-24 bg-surface-low/50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,29 +141,27 @@ const Trabajos = () => {
               
               <div className="lg:col-span-5">
                 <span className="label-editorial text-gold-600 font-bold block mb-2">
-                  CASO TESTIGO • ANTES Y DESPUÉS
+                  TRABAJO REALIZADO • OBRA ENTREGADA
                 </span>
                 <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-anthracite-900 tracking-tight leading-tight mb-4">
-                  Transformación Radical de Mármol Dañado en San Isidro
+                  Cristalizado de Piso en Sala Residencial
                 </h2>
                 <p className="font-sans text-sm text-anthracite-500 leading-relaxed mb-6">
-                  Deslice el selector para comparar el estado original (superficie calcificada con
-                  rayas de tránsito) frente al resultado tras la secuencia de 7 fases diamantadas y
-                  sellador AV-SHIELD™ Ultra.
+                  Tratamiento de piso de mármol con discos de diamante de grano progresivo en húmedo y aspiración continua. Acabado cristalizado antideslizante sin aplicar ceras temporales.
                 </p>
 
                 <div className="space-y-3 p-4 bg-white rounded-xl border border-slate-200/80 mb-6 text-xs text-anthracite-600">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold">Reflectometría Inicial:</span>
-                    <span className="font-mono text-red-600 font-bold">28 GU (Opaco)</span>
+                    <span className="font-semibold">Material:</span>
+                    <span className="font-mono text-anthracite-800 font-bold">Piso de Mármol Crema</span>
                   </div>
                   <div className="flex items-center justify-between border-t border-slate-100 pt-2">
-                    <span className="font-semibold">Reflectometría Final:</span>
-                    <span className="font-mono text-emerald-600 font-bold">94 GU (Espejo Puro)</span>
+                    <span className="font-semibold">Acabado:</span>
+                    <span className="font-mono text-emerald-600 font-bold">Brillo Espejo Antideslizante</span>
                   </div>
                   <div className="flex items-center justify-between border-t border-slate-100 pt-2">
-                    <span className="font-semibold">Tiempo de Ejecución:</span>
-                    <span className="font-mono text-anthracite-800 font-bold">48 Horas (Sin Polvo)</span>
+                    <span className="font-semibold">Método:</span>
+                    <span className="font-mono text-anthracite-800 font-bold">En Húmedo y con Aspiración (Sin Polvo)</span>
                   </div>
                 </div>
 
@@ -175,24 +172,35 @@ const Trabajos = () => {
                 >
                   <a
                     href={`https://wa.me/51961801932?text=${encodeURIComponent(
-                      "Hola AV SOLUCRET, vi el caso antes/después y deseo consultar para mi piso."
+                      "Hola AV Solucret, vi el trabajo de pulido y cristalizado de mármol en su web y deseo cotizar para mi piso."
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>Solicitar Muestra In Situ para mi Piso</span>
+                    <span>Cotizar Proyecto Similar por WhatsApp</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
               </div>
 
               <div className="lg:col-span-7">
-                <BeforeAfterSlider
-                  beforeImage="/gallery/pulido-diamantado-de-marmol-marfil.jpeg"
-                  afterImage="/general/piso-marmol.webp"
-                  beforeLabel="ANTES: OPACIDAD Y RAYAS"
-                  afterLabel="DESPUÉS: CRISTALIZADO 94 GU"
-                />
+                <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-ambient group bg-slate-950 aspect-[16/10]">
+                  <img
+                    src="/gallery/cristalizado-marmol-penthouse-vista-panoramica.jpg"
+                    alt="Cristalizado de piso de mármol en sala"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+                    <span className="text-xs font-mono font-bold text-gold-400">
+                      Fotografía real de obra entregada
+                    </span>
+                    <span className="text-xs font-mono font-bold bg-white/20 px-2.5 py-1 rounded backdrop-blur-sm">
+                      Lima Metropolitana
+                    </span>
+                  </div>
+                </div>
               </div>
 
             </div>

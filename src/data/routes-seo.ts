@@ -22,54 +22,56 @@ export interface RouteSeoConfig {
 export const routesSeoData: Record<string, RouteSeoConfig> = {
   "/": {
     path: "/",
-    title: "AV SOLUCRET | Pulido Diamantado y Restauración de Pisos en Lima",
+    title: "Pulido, Cristalizado y Mantenimiento de Pisos en Lima | AV Solucret",
     description:
-      "Empresa líder en pulido diamantado, vitrificado y restauración de pisos en Lima: mármol, terrazo, granito y concreto industrial. 100% libre de polvo y garantía por escrito.",
+      "Pulido diamantado, cristalizado, vitrificado y mantenimiento de pisos de mármol, granito, terrazo, mosaicos, porcelanato y concreto. Atención en todo Lima Metropolitana. Sin polvo y con garantía por escrito.",
     canonical: "https://avsolucret.com/",
     type: "website",
     image: "https://avsolucret.com/general/piso-marmol.webp",
     keywords: [
       "pulido de pisos lima",
       "pulido diamantado lima",
+      "cristalizado de pisos lima",
+      "mantenimiento de pisos lima",
       "restauracion de marmol san isidro",
       "pulido de terrazo miraflores",
       "concreto pulido surco",
       "vitrificado de pisos lima",
-      "sellado de pisos peru",
     ],
-    fallbackH1: "Pulido Diamantado y Restauración de Pisos en Lima",
+    fallbackH1: "Pulido, Cristalizado y Mantenimiento de Pisos en Lima",
     fallbackSummary:
-      "Servicio de ingeniería en restauración de mármol, terrazo, granito y concreto industrial en Lima Metropolitana. Tecnología diamantada sin polvo y dirección colegiada CIP.",
+      "Recuperamos y mantenemos pisos de mármol, granito, terrazo, mosaicos, porcelanato y concreto en viviendas, oficinas, hoteles y locales comerciales. Trabajamos sin polvo, por sectores y en horarios de baja afluencia, para que su operación no se detenga.",
   },
   "/servicios": {
     path: "/servicios",
-    title: "Servicios de Pulido Diamantado y Restauración de Pisos en Lima",
+    title: "Servicios de Pulido Diamantado, Cristalizado y Vitrificado | AV Solucret",
     description:
-      "Protocolos especializados de desbaste diamantado, vitrificado, cristalizado y sellado para mármol, terrazo, granito, lajas y concreto industrial en Lima Metropolitana.",
+      "Pulido diamantado, cristalizado, vitrificado y sellado, restauración de pisos deteriorados, mantenimiento para empresas y tableros en Lima Metropolitana.",
     canonical: "https://avsolucret.com/servicios",
     type: "website",
     image: "https://avsolucret.com/gallery/pulido-diamantado-vitrificado.jpeg",
     keywords: [
       "servicios pulido de pisos lima",
       "pulido diamantado marmol",
-      "cristalizado de terrazo",
-      "vitrificado de pisos",
-      "tratamiento de concreto industrial",
-      "decapado de lajas lima",
+      "cristalizado de pisos lima",
+      "vitrificado y sellado",
+      "restauracion de pisos deteriorados",
+      "mantenimiento de pisos para empresas",
+      "tableros y encimeras",
     ],
     breadcrumbs: [
       { name: "Inicio", path: "/" },
       { name: "Servicios", path: "/servicios" },
     ],
-    fallbackH1: "Servicios de Pulido Diamantado y Tratamiento de Suelos",
+    fallbackH1: "Servicios Especializados en Pisos y Superficies",
     fallbackSummary:
-      "Catálogo integral de procedimientos de restauración de suelos minerales: desbaste mecánico en 7 pasos diamantados, cristalizado termoquímico y sellado nanométrico AV-SHIELD™.",
+      "Pulido diamantado en húmedo con aspiración, cristalizado antideslizante sin cera, vitrificado con resina y sellador penetrante para viviendas y empresas.",
   },
   "/trabajos": {
     path: "/trabajos",
-    title: "Galería de Trabajos y Proyectos Realizados en Lima",
+    title: "Galería de Trabajos y Proyectos Realizados en Lima | AV Solucret",
     description:
-      "Casos reales de antes y después en restauración de mármol, terrazo y concreto en San Isidro, Miraflores, Surco y La Molina. Inspección visual y métricas de brillo.",
+      "Casos reales de antes y después en restauración de mármol, terrazo, mosaicos y concreto en San Isidro, Miraflores, Surco y La Molina.",
     canonical: "https://avsolucret.com/trabajos",
     type: "website",
     image: "https://avsolucret.com/gallery/pulido-diamantado-de-marmol-marfil.jpeg",
@@ -85,29 +87,29 @@ export const routesSeoData: Record<string, RouteSeoConfig> = {
     ],
     fallbackH1: "Proyectos y Restauraciones Ejecutadas en Lima Metropolitana",
     fallbackSummary:
-      "Evidencia fotográfica y técnica de intervenciones en residencias de alto estándar, áreas corporativas y complejos industriales de Lima.",
+      "Evidencia fotográfica de intervenciones sin polvo en viviendas, oficinas, hoteles y locales comerciales de Lima y Callao.",
   },
   "/nosotros": {
     path: "/nosotros",
-    title: "Nosotros | Empresa Formal de Restauración de Pisos en Lima",
+    title: "Nosotros | AV Solucret - MV Arquitectura & Construcción S.A.C.",
     description:
-      "Conoce a AV SOLUCRET S.A.C.: empresa formal (RUC 20608549102), dirección técnica con CIP Reg. 184652, cobertura SCTR y tecnología de aspiración ciclónica HEPA.",
+      "Conoce a AV Solucret (MV Arquitectura & Construcción S.A.C., RUC 20602100198): cuatro años de operación desde 2022, equipo técnico propio, pulido sin polvo y garantía por escrito.",
     canonical: "https://avsolucret.com/nosotros",
     type: "website",
     image: "https://avsolucret.com/main/logo.png",
     keywords: [
       "empresa pulido pisos lima",
-      "av solucret ruc",
-      "ingenieria restauracion pisos peru",
+      "av solucret ruc 20602100198",
+      "mv arquitectura y construccion sac",
       "pulido pisos sin polvo lima",
     ],
     breadcrumbs: [
       { name: "Inicio", path: "/" },
       { name: "Nosotros", path: "/nosotros" },
     ],
-    fallbackH1: "Ingeniería y Formalidad en Tratamiento de Pisos",
+    fallbackH1: "Equipo Técnico y Formalidad en Tratamiento de Pisos",
     fallbackSummary:
-      "Trayectoria, estándares de seguridad SCTR, personal capacitado en planilla y respaldo colegiado para proyectos residenciales y corporativos en el Perú.",
+      "En operación desde 2022 atendiendo viviendas, edificios y empresas en Lima con equipo técnico propio, empresa formal y garantía por escrito.",
   },
   "/contacto": {
     path: "/contacto",

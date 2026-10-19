@@ -66,7 +66,7 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
         },
         {
           "@type": "HomeAndConstructionBusiness",
-          "name": "AV SOLUCRET",
+          "name": companyData.name,
           "telephone": companyData.phone,
           "email": companyData.email,
           "address": {
@@ -74,19 +74,19 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
             "streetAddress": companyData.address,
             "addressLocality": "Lima",
             "addressRegion": "Lima",
-            "postalCode": "15036",
+            "postalCode": companyData.postalCode,
             "addressCountry": "PE",
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "-12.0864",
-            "longitude": "-77.0189",
+            "latitude": companyData.geo.latitude.toString(),
+            "longitude": companyData.geo.longitude.toString(),
           },
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-              "opens": "07:30",
+              "opens": "07:00",
               "closes": "19:00",
             },
           ],
@@ -309,9 +309,9 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
                     <MapPin className="w-4 h-4 text-diamond-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-anthracite-900 block font-heading">
-                        Modalidad Operativa:
+                        Oficina Principal:
                       </strong>
-                      <span>Servicio 100% In Situ a domicilio, residencias y empresas en todo Lima Metropolitana</span>
+                      <span>{companyData.office}</span>
                     </div>
                   </div>
 
@@ -319,9 +319,9 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
                     <Clock className="w-4 h-4 text-gold-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-anthracite-900 block font-heading">
-                        Jornada Técnica & Emergencias:
+                        Horario de Atención:
                       </strong>
-                      <span>Lunes a Sábado de 7:30 AM a 8:00 PM • Guardias nocturnas para retail y corporativos</span>
+                      <span>{companyData.hours} • Cobertura en todo Lima Metropolitana y Callao</span>
                     </div>
                   </div>
 
@@ -329,7 +329,7 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
                     <Mail className="w-4 h-4 text-diamond-600 shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-anthracite-900 block font-heading">
-                        Licitaciones & Consultas Institucionales:
+                        Correo Electrónico:
                       </strong>
                       <span>{companyData.email}</span>
                     </div>

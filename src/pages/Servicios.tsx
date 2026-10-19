@@ -20,7 +20,6 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { companyData } from "@/data/company";
@@ -186,14 +185,25 @@ const Servicios = () => {
               <div className="bg-white rounded-3xl border border-slate-200/90 p-8 sm:p-12 shadow-ambient">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                   
-                  {/* Left: Interactive Before / After Slider */}
+                  {/* Left: Real Project Image & Grit Sequence */}
                   <div className="lg:col-span-6 flex flex-col gap-4">
-                    <BeforeAfterSlider
-                      beforeImage="/gallery/pulido-diamantado-de-marmol-marfil.jpeg"
-                      afterImage="/general/piso-marmol.webp"
-                      beforeLabel="ESTADO INICIAL: RAYAS Y PORO"
-                      afterLabel="BRILLO ESPEJO FASE 3000"
-                    />
+                    <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-ambient group bg-slate-950 aspect-[16/10]">
+                      <img
+                        src="/gallery/pulido-diamantado-marmol-blanco-carrara.jpg"
+                        alt="Pulido Diamantado en Mármol Carrara"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+                        <span className="text-xs font-mono font-bold text-gold-400">
+                          PULIDO EN HÚMEDO CON ASPIRACIÓN
+                        </span>
+                        <span className="text-xs font-mono font-bold bg-white/20 px-2.5 py-1 rounded backdrop-blur-sm">
+                          Sin Polvo
+                        </span>
+                      </div>
+                    </div>
 
                     {/* Guía de Granulometría de Diamante (Image 5) */}
                     <div className="p-4 rounded-xl bg-surface-low border border-slate-200/80">
@@ -775,10 +785,10 @@ const Servicios = () => {
                   </div>
 
                   <div className="font-heading text-sm font-bold text-anthracite-900">
-                    {companyData.engineer.name}
+                    {companyData.technicalTeam.title}
                   </div>
                   <div className="text-[11px] font-mono text-gold-700 font-semibold mb-4">
-                    {companyData.engineer.cip}
+                    {companyData.technicalTeam.description}
                   </div>
 
                   <Button
