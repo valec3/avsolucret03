@@ -124,12 +124,12 @@ export const companyData = {
   closingCta: {
     residential: {
       title: "Residencial",
-      text: "Cotización sin costo. Mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día.",
-      cta: "Cotizar por WhatsApp",
+      text: "Evaluación técnica ágil. Mándenos una foto o metraje de su piso por WhatsApp y le brindamos una orientación el mismo día.",
+      cta: "Consultar por WhatsApp",
     },
     companies: {
       title: "Empresas",
-      text: "Diagnóstico técnico sin costo. Visitamos su local y entregamos una propuesta con metraje, tratamiento recomendado y precio por m².",
+      text: "Diagnóstico técnico especializado. Visitamos sus instalaciones y elaboramos una propuesta formal con metraje, plan de intervención y especificaciones.",
       cta: "Solicitar diagnóstico técnico",
     },
   },

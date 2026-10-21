@@ -20,9 +20,9 @@ export const homeFaqs: FAQItem[] = [
       "Trabajamos en mármol, granito, granito leather, terrazo, mosaicos, losetas de concreto, concreto pulido industrial, porcelanato, travertino, caliza y cuarzo. Tanto en pisos como en tableros y encimeras de cocina y baño.",
   },
   {
-    question: "¿La cotización o diagnóstico in situ tiene algún costo?",
+    question: "¿Cómo se coordina la evaluación técnica de mi piso?",
     answer:
-      "No. Para residencias: mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día sin costo. Para empresas: realizamos diagnóstico técnico sin costo, visitamos su local y entregamos una propuesta con metraje, tratamiento recomendado y precio por m².",
+      "Para residencias: puede enviarnos fotos o videos y el metraje aproximado por WhatsApp para brindarle una evaluación preliminar y propuesta el mismo día. Para empresas e industrias: coordinamos una inspección técnica in situ para evaluar el sustrato, determinar el protocolo adecuado y presentar una propuesta técnica integral.",
   },
   {
     question: "¿Entregan garantía por escrito y son empresa formal?",

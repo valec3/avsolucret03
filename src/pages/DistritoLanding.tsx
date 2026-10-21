@@ -222,7 +222,7 @@ const DistritoLanding = ({ districtSlug }: DistritoLandingProps) => {
                     </p>
 
                     <div className="pt-1 border-t border-slate-100 flex items-center justify-between text-[11px] text-anthracite-500">
-                      <span>Evaluación de brillo sin costo</span>
+                      <span>Evaluación técnica especializada</span>
                       <strong className="text-diamond-700 font-semibold">Respuesta &lt; 15 min</strong>
                     </div>
                   </div>
@@ -454,7 +454,7 @@ const DistritoLanding = ({ districtSlug }: DistritoLandingProps) => {
               ¿Desea restaurar el brillo de sus pisos en {district.name}?
             </h2>
             <p className="font-sans text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Agende hoy una inspección técnica in situ sin costo. Nuestros ingenieros evaluarán el estado de su sustrato y le brindarán una propuesta técnica formal.
+              Agende hoy una inspección técnica in situ. Nuestros ingenieros evaluarán el estado de su sustrato y le brindarán una propuesta técnica formal.
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -204,7 +204,7 @@ const CuidadosMarmol = () => {
                     ¿Cada cuánto tiempo conviene realizar un pulido diamantado profesional?
                   </h4>
                   <p className="text-xs text-anthracite-600 leading-relaxed">
-                    En áreas residenciales de tránsito moderado, cada 3 a 5 años. En lobbies corporativos o restaurantes de alto tránsito, se sugiere mantenimiento semestral o anual con resinas de alto grano y nanosellado.
+                    En áreas residenciales de tránsito moderado, cada 3 a 5 años. En lobbies corporativos o restaurantes de alto tránsito, se sugiere mantenimiento semestral o anual con resinas de alto grano y sellado penetrante.
                   </p>
                 </div>
 
@@ -213,7 +213,7 @@ const CuidadosMarmol = () => {
                     ¿Cómo comprobar si el sellador del mármol sigue activo?
                   </h4>
                   <p className="text-xs text-anthracite-600 leading-relaxed">
-                    Realice la <em>Prueba de la Gota de Agua</em>: coloque unas gotas de agua en la superficie. Si al cabo de 5 a 10 minutos el agua se absorbe o oscurece la piedra, la red de sellado ha expirado y requiere reimpregnación molecular con AV-SHIELD™ Ultra.
+                    Realice la <em>Prueba de la Gota de Agua</em>: coloque unas gotas de agua en la superficie. Si al cabo de 5 a 10 minutos el agua se absorbe o oscurece la piedra, el sellado ha perdido efecto y requiere un nuevo servicio de pulido y sellado hidrófugo.
                   </p>
                 </div>
 
@@ -232,7 +232,7 @@ const CuidadosMarmol = () => {
             <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-anthracite-900 to-anthracite-800 text-white shadow-ambient">
               <div className="max-w-2xl">
                 <span className="text-[10px] font-mono font-bold text-gold-400 tracking-widest uppercase">
-                  DIAGNÓSTICO IN SITU SIN COSTO EN LIMA
+                  DIAGNÓSTICO TÉCNICO IN SITU EN LIMA
                 </span>
                 <h3 className="font-heading text-2xl font-extrabold text-white mt-1 mb-3">
                   ¿Tu mármol perdió su reflejo o tiene manchas ácidas?

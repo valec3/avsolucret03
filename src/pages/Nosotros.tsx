@@ -125,7 +125,7 @@ const Nosotros = () => {
                   </span>
                   <span className="flex items-center gap-1.5 bg-white px-3 py-1 rounded-md border border-slate-200">
                     <Shield className="w-3.5 h-3.5 text-gold-600" />
-                    BLINDAJE NANO AV-SHIELD™
+                    SELLADO Y CRISTALIZADO PRO
                   </span>
                 </div>
               </motion.div>
@@ -493,7 +493,7 @@ const Nosotros = () => {
             </h2>
 
             <p className="font-sans text-sm sm:text-base text-anthracite-500 leading-relaxed max-w-2xl mx-auto mb-10">
-              Permítanos evaluar sus instalaciones in situ sin costo de diagnóstico en Lima
+              Permítanos evaluar sus instalaciones in situ en Lima
               Metropolitana. Comprobaremos el nivel de brillo de su piso y diseñaremos una
               propuesta técnica transparente.
             </p>

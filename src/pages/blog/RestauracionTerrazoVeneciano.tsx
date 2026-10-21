@@ -190,10 +190,10 @@ const RestauracionTerrazoVeneciano = () => {
 
                 <div className="p-4 bg-surface-low rounded-xl border border-slate-200">
                   <div className="font-heading text-sm font-bold text-anthracite-900 mb-1">
-                    Paso 4: Sellado Nanoscópico AV-SHIELD™ Ultra
+                    Paso 4: Densificado y Sellado Penetrante (Sistema Bristone®)
                   </div>
                   <p className="text-xs text-anthracite-500">
-                    Blindaje hidrofugante que previene la absorción de manchas en el aglomerado de cemento.
+                    Tratamiento a base de silicatos que penetra y reduce la porosidad mediante intercambio iónico, aumentando la dureza sin formar película superficial.
                   </p>
                 </div>
               </div>
@@ -211,7 +211,7 @@ const RestauracionTerrazoVeneciano = () => {
                   ¿Tiene un piso de terrazo que desea recuperar?
                 </h3>
                 <p className="text-xs text-anthracite-500 max-w-lg">
-                  Evaluamos la profundidad de fisuras y formulamos la prueba de color in situ sin costo en Lima.
+                  Evaluamos la profundidad de fisuras y formulamos la prueba de color in situ en Lima.
                 </p>
               </div>
 

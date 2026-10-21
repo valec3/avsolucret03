@@ -308,14 +308,14 @@ const Blog = () => {
         <section className="py-20 lg:py-28 bg-surface-low/50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="label-editorial text-gold-600 font-bold block mb-2">
-              DIAGNÓSTICO IN SITU GRATUITO
+              DIAGNÓSTICO TÉCNICO ESPECIALIZADO
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-anthracite-900 tracking-tight mb-4">
               ¿Tu piso ya sufrió daños por ceras o químicos abrasivos?
             </h2>
             <p className="font-sans text-sm sm:text-base text-anthracite-500 leading-relaxed max-w-xl mx-auto mb-8">
               No aplique remedios caseros que puedan empeorar la porosidad. Envíenos una foto por
-              WhatsApp para una evaluación técnica inmediata sin costo.
+              WhatsApp para una evaluación técnica inmediata.
             </p>
 
             <Button

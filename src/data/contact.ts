@@ -52,16 +52,16 @@ export const contactRoadmap: ContactRoadmapStep[] = [
     title: "Contacto y Consulta",
     subtitle: "POR WHATSAPP EN EL DÍA",
     description:
-      "Envíenos fotos o el metraje de su piso por WhatsApp. Le damos un estimado el mismo día sin costo.",
+      "Envíenos fotos o el metraje de su piso por WhatsApp. Le brindamos una orientación técnica el mismo día.",
     benefit: "Respuesta en el día",
   },
   {
     step: "02",
     title: "Evaluación y Prueba In Situ",
-    subtitle: "SIN COSTO NI COMPROMISO",
+    subtitle: "DIAGNÓSTICO TÉCNICO IN SITU",
     description:
       "Identificamos el tipo de piedra y su estado. Hacemos una prueba en zona poco visible que usted aprueba antes de continuar.",
-    benefit: "Prueba previa gratuita",
+    benefit: "Prueba previa técnica",
   },
   {
     step: "03",
@@ -99,8 +99,8 @@ export const institutionalGuarantees: InstitutionalGuarantee[] = [
 
 export const contactHeroData = {
   badge: "ATENCIÓN EN TODO LIMA METROPOLITANA Y CALLAO",
-  titlePrefix: "COTIZACIÓN Y DIAGNÓSTICO",
-  titleHighlight: "SIN COSTO",
+  titlePrefix: "EVALUACIÓN Y DIAGNÓSTICO",
+  titleHighlight: "ESPECIALIZADO",
   subtitle:
-    "Para viviendas: mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día. Para empresas: visitamos su local y entregamos propuesta con metraje, tratamiento recomendado y precio por m².",
+    "Para viviendas: mándenos una foto o metraje de su piso por WhatsApp y le brindamos una orientación técnica el mismo día. Para empresas: realizamos inspección técnica en sus instalaciones y entregamos una propuesta integral con metraje, plan de intervención y especificaciones.",
 };

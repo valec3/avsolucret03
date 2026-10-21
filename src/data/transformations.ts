@@ -56,11 +56,11 @@ export const transformationCases: TransformationCase[] = [
     beforeImage: "/gallery/pulido-diamantado-de-marmol-travertino.jpeg",
     afterImage: "/gallery/pulido-diamantado-vitrificado.jpeg",
     beforeLabel: "ANTES • POROSIDAD Y DESGASTE",
-    afterLabel: "DESPUÉS • BLINDAJE AV-SHIELD™",
+    afterLabel: "DESPUÉS • SELLADO Y CRISTALIZADO",
     description:
-      "Tratamiento ocluyente y abrillantado controlado para travertino. Relleno de cavidades naturales y aplicación de nanosellador hidrófugo que previene la absorción de humedad.",
+      "Tratamiento ocluyente y abrillantado controlado para travertino. Relleno de cavidades naturales y aplicación de sellador penetrante hidrófugo que previene la absorción de humedad.",
     metrics: [
-      { label: "Impermeabilidad", value: "100%", desc: "Repele líquidos y café" },
+      { label: "Impermeabilidad", value: "Protegido", desc: "Reducción de absorción" },
       { label: "Mantenimiento", value: "Agua Neutra", desc: "Cero ceras químicas" },
       { label: "Entrega", value: "48 Horas", desc: "Garantía escrita formal" },
     ],

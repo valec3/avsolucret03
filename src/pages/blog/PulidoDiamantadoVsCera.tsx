@@ -181,7 +181,7 @@ const PulidoDiamantadoVsCera = () => {
                 </li>
                 <li className="p-3 bg-surface-low rounded-xl border border-slate-200 flex items-center gap-2 text-xs">
                   <CheckCircle2 className="w-4 h-4 text-gold-600 shrink-0" />
-                  <span><strong>AV-SHIELD™ Ultra:</strong> Escudo nanométrico transpirable.</span>
+                  <span><strong>Sellador Penetrante:</strong> Protección transpirable que no crea capas superficiales ni se descascara.</span>
                 </li>
               </ul>
 
@@ -219,12 +219,12 @@ const PulidoDiamantadoVsCera = () => {
                     </tr>
                     <tr>
                       <td className="p-3.5 font-semibold text-anthracite-800">Respirabilidad del Poro</td>
-                      <td className="p-3.5 font-bold text-diamond-700">100% permeable al vapor</td>
-                      <td className="p-3.5 text-anthracite-500">0% (oclusión total, atrapa humedad)</td>
+                      <td className="p-3.5 font-bold text-diamond-700">Transpirable (permite evaporación natural)</td>
+                      <td className="p-3.5 text-anthracite-500">Oclusión por película (atrapa humedad)</td>
                     </tr>
                     <tr>
                       <td className="p-3.5 font-semibold text-anthracite-800">Reacción al Calor / Sol</td>
-                      <td className="p-3.5 font-bold text-diamond-700">Inmune (resistente a rayos UV)</td>
+                      <td className="p-3.5 font-bold text-diamond-700">No amarillea ni decolora</td>
                       <td className="p-3.5 text-anthracite-500">Se ablanda, raya y amarillea</td>
                     </tr>
                     <tr>
@@ -262,7 +262,7 @@ const PulidoDiamantadoVsCera = () => {
                   ¿Tus pisos sufrieron el efecto de ceras acumuladas?
                 </h3>
                 <p className="text-xs text-anthracite-500 max-w-lg">
-                  Nuestros ingenieros evalúan su superficie sin costo in situ en Lima Metropolitana.
+                  Nuestros ingenieros evalúan su superficie in situ en Lima Metropolitana.
                   Diseñamos un plan de recuperación sin polvo ni ceras.
                 </p>
               </div>

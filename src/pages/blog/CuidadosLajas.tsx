@@ -101,7 +101,7 @@ const CuidadosLajas = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent text-white text-xs flex items-center justify-between">
-              <span>Terraza exterior en Malecón de Miraflores protegida con AV-SHIELD™ Ultra.</span>
+              <span>Terraza exterior en Malecón de Miraflores con tratamiento de sellado penetrante transpirable.</span>
               <span className="font-mono text-gold-400 font-bold">AV SOLUCRET LAB</span>
             </div>
           </div>
@@ -147,10 +147,10 @@ const CuidadosLajas = () => {
 
                 <div className="p-5 rounded-xl bg-surface-low border border-slate-200/80">
                   <h3 className="font-heading font-bold text-sm text-anthracite-900 mb-2">
-                    3. Sellado Nanométrico Hidrófugo
+                    3. Sellado Penetrante Hidrófugo
                   </h3>
                   <p className="text-xs text-anthracite-500 leading-relaxed">
-                    Aplicación de nanopartículas de silano-siloxano <em>AV-SHIELD™ Ultra</em>: crea una barrera repelente al agua sin sellar la respirabilidad de la piedra.
+                    Aplicación de sellador penetrante transpirable: crea una barrera repelente al agua sin sellar la respirabilidad de la piedra.
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ const CuidadosLajas = () => {
                   ¿Tus lajas o terrazas presentan salitre continuo?
                 </h3>
                 <p className="text-xs text-anthracite-300 mb-6 leading-relaxed">
-                  Realizamos pruebas de impregnación sin costo en tus pisos exteriores para verificar la penetración del nanopolímero hidrófugo.
+                  Realizamos pruebas de impregnación en tus pisos exteriores para verificar la absorción y porosidad del sustrato.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Button

@@ -91,7 +91,7 @@ export const technicalPackages: TechnicalPackage[] = [
     features: [
       "Diamantado completo hasta acabado espejo",
       "Densificador: penetra en el piso y lo endurece por dentro, no solo en la superficie",
-      "Resina selladora: cierra el poro y frena las manchas de vino, café y aceite",
+      "Resina selladora: reduce la porosidad capilar y previene la absorción de líquidos y grasas",
       "Tres capas de vitrificado cristalizado, dejando reaccionar entre una y otra",
       "Acabado: brillo espejo profundo y la mayor resistencia al uso diario",
     ],
@@ -105,8 +105,8 @@ export const pricingEstimatorData = {
   sectionBadge: "LOS TRES PLANES DE INTERVENCIÓN",
   title: "Los Tres Planes",
   subtitle:
-    "Permite que te autocalifiques antes de escribirnos. Seleccioná el plan y el tipo de material para coordinar una cotización exacta.",
-  transparencyBadge: "COTIZACIÓN SIN COSTO • SIN COMPROMISO",
+    "Seleccione el plan y el tipo de material para coordinar una evaluación técnica y recibir una propuesta personalizada.",
+  transparencyBadge: "EVALUACIÓN TÉCNICA • PROPUESTA A MEDIDA",
   calculatorTitle: "Estimador Técnico de Metraje",
   calculatorSubtitle: "Proyectá tu requerimiento en Lima Metropolitana y Callao",
 };

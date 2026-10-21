@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Check, Shield, ArrowRight, Gauge, Clock, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { companyData } from "@/data/company";
 import { surfaces, finishLevels, technicalPackages } from "@/data/packages";
 
 const PricingSection = () => {
   const [area, setArea] = useState<number>(85);
   const [surface, setSurface] = useState<string>("marmol");
   const [finish, setFinish] = useState<string>("cristalizado-plus");
+  const [activePlanIndex, setActivePlanIndex] = useState<number>(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   // Estimador de tiempo de obra (en días laborales)
   const estimatedDays = area <= 50 ? "1 a 2 días" : area <= 120 ? "2 a 3 días" : "3 a 5 días";
@@ -31,9 +32,31 @@ const PricingSection = () => {
     const text = `Hola AV Solucret, utilicé el estimador técnico en su web:
 - Metraje aprox: ${area} m²
 - Material: ${surfaceName}
-- Plan seleccionado: ${protocolName}
-Deseo coordinar una cotización sin costo para mis pisos.`;
+- Plan de interés: ${protocolName}
+Deseo coordinar una evaluación técnica y recibir la propuesta para mi proyecto.`;
     return `https://wa.me/51961801932?text=${encodeURIComponent(text)}`;
+  };
+
+  const handleCarouselScroll = () => {
+    if (!carouselRef.current) return;
+    const { scrollLeft, offsetWidth } = carouselRef.current;
+    if (offsetWidth === 0) return;
+    const cardWidth = offsetWidth * 0.85;
+    const index = Math.round(scrollLeft / cardWidth);
+    setActivePlanIndex(Math.min(Math.max(index, 0), technicalPackages.length - 1));
+  };
+
+  const scrollToIndex = (index: number) => {
+    if (!carouselRef.current) return;
+    const cards = carouselRef.current.children;
+    if (cards[index]) {
+      (cards[index] as HTMLElement).scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+      setActivePlanIndex(index);
+    }
   };
 
   return (
@@ -41,7 +64,7 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-gold-600" />
             <span className="label-editorial text-gold-800 font-extrabold tracking-widest">
@@ -54,12 +77,16 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
           </h2>
 
           <p className="font-sans text-sm sm:text-base text-anthracite-600 leading-relaxed font-medium">
-            Permite que usted se autocalifique antes de escribir. Elija el nivel que mejor responda al uso y estado de su piso:
+            Seleccione el nivel de intervención que mejor responda al uso y estado actual de su piso:
           </p>
         </div>
 
-        {/* 3 Planes Exactos del PDF */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {/* 3 Planes: Mobile Carousel (Snap) + Desktop Grid */}
+        <div
+          ref={carouselRef}
+          onScroll={handleCarouselScroll}
+          className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-none pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 md:mx-0 md:px-0 mb-4 md:mb-20"
+        >
           {technicalPackages.map((pkg, idx) => (
             <motion.div
               key={pkg.id}
@@ -67,9 +94,9 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className={`rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 relative ${
+              className={`w-[85vw] max-w-[340px] md:w-auto shrink-0 snap-center rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 relative ${
                 pkg.highlight
-                  ? "bg-white border-2 border-gold-400 shadow-glow-gold -translate-y-2"
+                  ? "bg-white border-2 border-gold-400 shadow-glow-gold md:-translate-y-2"
                   : "bg-surface-low/80 border border-slate-200/90 shadow-ambient hover:border-slate-300"
               }`}
             >
@@ -143,14 +170,31 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
           ))}
         </div>
 
+        {/* Mobile Carousel Indicators (Dots) */}
+        <div className="flex md:hidden justify-center items-center gap-2 mb-12">
+          {technicalPackages.map((pkg, idx) => (
+            <button
+              key={pkg.id}
+              type="button"
+              onClick={() => scrollToIndex(idx)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                activePlanIndex === idx
+                  ? "w-7 bg-diamond-600"
+                  : "w-2 bg-slate-300 hover:bg-slate-400"
+              }`}
+              aria-label={`Ver ${pkg.name}`}
+            />
+          ))}
+        </div>
+
         {/* Estimador Técnico de Metraje y Diagnóstico */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-3xl bg-surface-low border border-slate-200/90 p-8 sm:p-12 shadow-ambient"
+          className="rounded-3xl bg-surface-low border border-slate-200/90 p-6 sm:p-10 lg:p-12 shadow-ambient"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             
             {/* Left Inputs (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
@@ -165,7 +209,7 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
                   Estimador Técnico de Metraje y Plan
                 </h3>
                 <p className="font-sans text-xs sm:text-sm text-anthracite-500 mt-1">
-                  Ajuste el metraje y seleccione el tipo de material para simular el plan requerido antes de escribirnos:
+                  Ajuste el metraje y seleccione el tipo de material para simular el protocolo requerido y solicitar una evaluación técnica:
                 </p>
               </div>
 
@@ -236,10 +280,32 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
 
               {/* Selector de Material (11 Materiales del PDF) */}
               <div>
-                <label className="block text-xs font-heading font-bold text-anthracite-800 uppercase tracking-wider mb-2">
+                <label
+                  htmlFor="mobile-material-select"
+                  className="block text-xs font-heading font-bold text-anthracite-800 uppercase tracking-wider mb-2"
+                >
                   Material que trabajamos:
                 </label>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+
+                {/* Mobile Dropdown (<640px) */}
+                <div className="block sm:hidden relative">
+                  <select
+                    id="mobile-material-select"
+                    value={surface}
+                    onChange={(e) => setSurface(e.target.value)}
+                    className="w-full py-3 px-4 rounded-xl border border-slate-300 bg-white text-anthracite-900 font-heading text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-diamond-500 shadow-sm appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23475569%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25rem] bg-[right_0.75rem_center] bg-no-repeat"
+                    aria-label="Seleccionar material del piso"
+                  >
+                    {surfaces.map((s) => (
+                      <option key={s.id} value={s.id}>
+                        {s.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Desktop Buttons (>=640px) */}
+                <div className="hidden sm:grid sm:grid-cols-4 gap-2">
                   {surfaces.map((s) => (
                     <button
                       key={s.id}
@@ -282,14 +348,14 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
             </div>
 
             {/* Right Output Box (5 cols) */}
-            <div className="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-ambient flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/90 shadow-ambient flex flex-col justify-between relative">
               <div>
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
                   <span className="text-xs font-mono font-extrabold text-gold-800 uppercase tracking-wider">
                     RESUMEN DE ESTIMACIÓN
                   </span>
                   <span className="text-[10px] font-heading font-bold bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-md border border-emerald-300">
-                    Cotización sin Costo
+                    Propuesta a Medida
                   </span>
                 </div>
 
@@ -300,7 +366,7 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
                       <div className="text-xs text-anthracite-600 font-bold uppercase tracking-wider">
                         Plan Seleccionado
                       </div>
-                      <div className="font-heading text-sm font-extrabold text-anthracite-900">
+                      <div className="font-heading text-sm font-extrabold text-anthracite-900 leading-snug">
                         {protocolName}
                       </div>
                     </div>
@@ -324,7 +390,7 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
                       <div className="text-xs text-anthracite-600 font-bold uppercase tracking-wider">
                         Acabado Proyectado
                       </div>
-                      <div className="font-heading text-sm font-extrabold text-anthracite-900">
+                      <div className="font-heading text-sm font-extrabold text-anthracite-900 leading-snug">
                         {projectedGloss}
                       </div>
                     </div>
@@ -336,19 +402,20 @@ Deseo coordinar una cotización sin costo para mis pisos.`;
                 </div>
               </div>
 
-              <div>
+              <div className="pt-2">
                 <Button
                   size="lg"
-                  className="w-full bg-diamond-600 hover:bg-diamond-500 text-white font-heading font-bold text-sm py-6 rounded-xl shadow-ambient hover:shadow-glow-blue transition-all"
+                  className="w-full bg-diamond-600 hover:bg-diamond-500 text-white font-heading font-bold text-sm h-auto py-4 px-4 rounded-xl shadow-ambient hover:shadow-glow-blue transition-all whitespace-normal text-center leading-snug sm:whitespace-nowrap"
                   asChild
                 >
                   <a
                     href={getWhatsAppMessage()}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2"
                   >
-                    <span>Cotizar por WhatsApp con estos Datos</span>
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <span>Solicitar Propuesta por WhatsApp</span>
+                    <ArrowRight className="w-4 h-4 shrink-0" />
                   </a>
                 </Button>
                 <div className="text-center mt-2.5 text-[11px] font-mono text-anthracite-600 flex items-center justify-center gap-1.5 font-medium">

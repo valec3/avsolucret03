@@ -62,7 +62,7 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
           "name": "Contacto y Cotizaciones de Pulido de Pisos | AV SOLUCRET",
           "url": "https://avsolucret.com/contacto",
           "description":
-            "Solicite inspección técnica in situ sin costo para pulido diamantado y restauración en Lima. Respuesta en menos de 15 minutos.",
+            "Solicite inspección técnica in situ especializada para pulido diamantado y restauración en Lima. Respuesta en menos de 15 minutos.",
         },
         {
           "@type": "HomeAndConstructionBusiness",
@@ -188,7 +188,7 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
                   </Button>
                 </div>
 
-                {/* Formulario de Evaluación In Situ 100% Gratuito (Image 7) */}
+                {/* Formulario de Evaluación In Situ Especializada */}
                 <div className="bg-white rounded-3xl border border-slate-200/90 p-8 sm:p-10 shadow-ambient">
                   <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
                     <div>
@@ -199,8 +199,8 @@ Deseo agendar la visita técnica sin compromiso para diagnosticar mis pisos.`;
                         Completá los datos y te redirigirá a WhatsApp con la solicitud lista para enviar.
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-300 shrink-0">
-                      100% GRATUITO
+                    <span className="text-[10px] font-mono font-bold text-diamond-800 bg-diamond-50 px-2.5 py-1 rounded border border-diamond-300 shrink-0">
+                      ATENCIÓN DIRECTA
                     </span>
                   </div>
 

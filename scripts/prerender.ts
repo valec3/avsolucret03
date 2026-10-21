@@ -241,18 +241,19 @@ export function prerenderAllRoutes() {
   for (const route of routes) {
     const routeHtml = processHtml(baseHtml, route);
 
-    let targetDir = distDir;
+    let targetFile = path.join(distDir, "index.html");
     if (route.path !== "/") {
-      // e.g. /servicios -> dist/servicios, /blog/cuidados-marmol -> dist/blog/cuidados-marmol
+      // e.g. /servicios -> dist/servicios.html, /zonas/pulido-de-pisos-miraflores -> dist/zonas/pulido-de-pisos-miraflores.html
+      // En Cloudflare Pages, las rutas limpias basadas en archivos planos .html devuelven 200 OK directo
+      // evitando la redirección 308 de carpetas (trailing-slash redirect loop) en Google Search Console.
       const subPath = route.path.replace(/^\//, "");
-      targetDir = path.join(distDir, ...subPath.split("/"));
+      targetFile = path.join(distDir, `${subPath}.html`);
+      const targetDir = path.dirname(targetFile);
+      if (!fs.existsSync(targetDir)) {
+        fs.mkdirSync(targetDir, { recursive: true });
+      }
     }
 
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    const targetFile = path.join(targetDir, "index.html");
     fs.writeFileSync(targetFile, routeHtml, "utf-8");
     console.log(`  ✓ Generado [SSG]: ${route.path} -> ${path.relative(rootDir, targetFile)}`);
     generatedCount++;

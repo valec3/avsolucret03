@@ -90,15 +90,15 @@ export const districtsData: Record<string, DistrictInfo> = {
       "Especialistas en restauración de terrazo veneciano y mármol en Miraflores. Eliminación de humedad por capilaridad y vitrificado de pisos in situ con garantía escrita.",
     headline: "Restauración de Terrazo Veneciano y Mármol en Miraflores",
     subheadline:
-      "Recuperación patrimonial de pisos clásicos en departamentos frente al mar y malecones miraflorinos. Protección nanotecnológica contra el salitre y la humedad costera.",
+      "Recuperación patrimonial de pisos clásicos en departamentos frente al mar y malecones miraflorinos. Protección especializada contra el salitre y la humedad costera.",
     targetArchitecture: "Edificios clásicos de los años 60-80, departamentos en Malecones (Armendáriz, Cisneros) y casonas miraflorinas.",
     predominantSubstrates: ["Terrazo Veneciano Clásico", "Mosaico Granítico", "Mármol Travertino Nacional", "Porcelanatos de Alto Tránsito"],
     localProblemTitle: "Ataque de Salitre, Humedad Marina y Juntas Desniveladas",
     localProblemDesc:
       "La proximidad al Océano Pacífico somete a los pisos de Miraflores a eflorescencia salina constante. En terrazos antiguos, esto provoca desprendimiento de marmolina en juntas y una capa blanquecina opaca que ninguna limpieza superficial logra eliminar.",
-    engineeredSolutionTitle: "Desbaste Profundo, Remasillado Polimérico y Barrera Nanométrica",
+    engineeredSolutionTitle: "Desbaste Profundo, Remasillado Polimérico y Barrera de Sellado Penetrante",
     engineeredSolutionDesc:
-      "Nivelamos cejas y juntas con diamantes metálicos de corte plano. Reparamos fisuras con masilla polimérica tintada al tono exacto de la piedra y aplicamos nuestro sellador transpirable AV-SHIELD™ para bloquear el ascenso capilar del salitre.",
+      "Nivelamos cejas y juntas con diamantes metálicos de corte plano. Reparamos fisuras con masilla polimérica tintada al tono exacto de la piedra y aplicamos sellador transpirable para reducir la porosidad y bloquear el ascenso capilar del salitre.",
     caseStudy: {
       title: "Departamento Clásico en Malecón 28 de Julio, Miraflores",
       substrate: "Terrazo Veneciano Bicolor (145 m²)",
@@ -213,6 +213,186 @@ export const districtsData: Record<string, DistrictInfo> = {
     geo: {
       latitude: -12.0833,
       longitude: -76.9167,
+    },
+  },
+
+  "pulido-de-pisos-san-borja": {
+    id: "san-borja",
+    slug: "pulido-de-pisos-san-borja",
+    name: "San Borja",
+    title: "Pulido y Cristalizado de Pisos en San Borja | Mármol & Terrazo sin Polvo",
+    metaDescription:
+      "Servicio especializado de pulido diamantado y cristalizado de mármol y terrazo en San Borja (Chacarilla, San Borja Norte y Sur). Cero polvo con turbina HEPA.",
+    headline: "Pulido Diamantado y Cristalizado de Pisos en San Borja",
+    subheadline:
+      "Atención in situ para departamentos y residencias en San Borja. Protocolo en húmedo con aspiración continua, garantizando ambientes limpios y sin polvo residual.",
+    targetArchitecture: "Departamentos residenciales en San Borja Norte y Sur, penthouses en Chacarilla y residencias unifamiliares clásicas.",
+    predominantSubstrates: ["Mármol Travertino", "Mármol Crema Marfil", "Terrazo Veneciano Pulido", "Granito Natural"],
+    localProblemTitle: "Pérdida de Brillo en Áreas Sociales y Desgaste por Tránsito Diario",
+    localProblemDesc:
+      "En los departamentos y casas de San Borja, el uso constante de salas y comedores, sumado al paso del tiempo y a productos de limpieza con pH inadecuado, desgasta el sellado original y opaca el reflejo de la piedra.",
+    engineeredSolutionTitle: "Desbaste Diamantado Progresivo y Cristalizado Antideslizante",
+    engineeredSolutionDesc:
+      "Restauramos la planimetría mediante pasajes sucesivos de diamante resinado al agua. Aplicamos cristalizado endurecedor que sella la porosidad sin crear películas plásticas, logrando un brillo espejo duradero y seguro al caminar.",
+    caseStudy: {
+      title: "Departamento en Av. San Borja Sur",
+      substrate: "Mármol Travertino y Crema Marfil (120 m²)",
+      area: "120 m²",
+      challenge: "Micro-rayaduras por movimiento de sillas y opacidad generalizada en área social.",
+      solution: "Pulido fino diamantado en 5 pasos al agua y cristalizado termo-químico con máquina rotativa.",
+      glossUnits: "91 GU (Brillo Espejo)",
+      image: "/gallery/cristalizado-marmol-penthouse-vista-panoramica.jpg",
+    },
+    faqs: [
+      {
+        question: "¿El pulido afectará a los vecinos o las áreas comunes de mi edificio en San Borja?",
+        answer:
+          "No. Nuestro sistema funciona en húmedo con turbina de aspiración industrial y bajo nivel sonoro, cumpliendo estrictamente con las normas de convivencia de juntas de propietarios en San Borja.",
+      },
+      {
+        question: "¿Es necesario retirar muebles pesados de la sala?",
+        answer:
+          "Trabajamos coordinadamente por sectores. Movemos el mobiliario ligero y protegemos zócalos y muebles fijos para que no tenga que desocupar la vivienda.",
+      },
+    ],
+    geo: {
+      latitude: -12.1075,
+      longitude: -77.0016,
+    },
+  },
+
+  "pulido-de-pisos-barranco": {
+    id: "barranco",
+    slug: "pulido-de-pisos-barranco",
+    name: "Barranco",
+    title: "Restauración de Pisos en Barranco | Mosaicos, Terrazo y Mármol Histórico",
+    metaDescription:
+      "Restauración patrimonial y pulido de pisos en Barranco. Especialistas en mosaicos empastados, terrazo veneciano y casonas frente al mar con protección contra el salitre.",
+    headline: "Restauración de Mosaicos, Terrazo y Mármol en Barranco",
+    subheadline:
+      "Recuperación patrimonial de pisos clásicos en casonas y lofts de Barranco. Sellado hidrófugo transpirable para bloquear la brisa marina y el salitre.",
+    targetArchitecture: "Casonas patrimoniales en Pedro de Osma y Av. Grau, lofts y departamentos frente al mar en Malecón Paul Harris.",
+    predominantSubstrates: ["Mosaicos Empastados Artesanales", "Terrazo Veneciano Artístico", "Mármol Blanco", "Madera y Piedra"],
+    localProblemTitle: "Salinidad Marina, Decoloración de Pastas y Desprendimiento en Juntas",
+    localProblemDesc:
+      "La extrema cercanía al mar somete a los pisos de Barranco a una humedad salina permanente. En mosaicos empastados antiguos y terrazos, esto genera pérdida de contraste en los pigmentos, manchas blancas de salitre y desmoronamiento de juntas.",
+    engineeredSolutionTitle: "Decapado Profundo, Consolidación con Silicatos y Sellado Transpirable",
+    engineeredSolutionDesc:
+      "Limpieza técnica con tensoactivos neutros para remover suciedad incrustada sin quemar los colores. Desbaste superficial milimétrico y tratamiento penetrante a base de silicatos que densifica el material sin formar película plástica superficial.",
+    caseStudy: {
+      title: "Casona Patrimonial en Av. Pedro de Osma, Barranco",
+      substrate: "Mosaicos Empastados y Terrazo Decorativo (95 m²)",
+      area: "95 m²",
+      challenge: "Suciedad adherida por décadas, pérdida de color en motivos geométricos y ataque de salitre costero.",
+      solution: "Lavado y decapado neutro, nivelación diamantada suave, remasillado de juntas y sellado transpirable para realzar los tonos originales.",
+      glossUnits: "Tono Realzado Mate Natural",
+      image: "/gallery/vitrificado-sellado-mosaicos-decorativos-terraza.jpg",
+    },
+    faqs: [
+      {
+        question: "¿Se pueden recuperar los colores de un piso de mosaico antiguo en Barranco sin dañarlo?",
+        answer:
+          "Sí. No usamos ácidos corrosivos como ácido muriático que destruye la pasta. Empleamos pulido diamantado fino al agua y selladores transpirables que reviven la pigmentación original del mosaico artesanal.",
+      },
+      {
+        question: "¿Cómo evitan que el salitre vuelva a brotar en pisos cercanos al mar?",
+        answer:
+          "Aplicamos sistemas de sellado por intercambio iónico que penetran en el capilar de la loseta. Al no crear una película plástica superficial, el piso respira la humedad sin atrapar sales que causen descascaramiento.",
+      },
+    ],
+    geo: {
+      latitude: -12.1481,
+      longitude: -77.0211,
+    },
+  },
+
+  "pulido-de-pisos-magdalena": {
+    id: "magdalena",
+    slug: "pulido-de-pisos-magdalena",
+    name: "Magdalena",
+    title: "Pulido y Vitrificado de Pisos en Magdalena del Mar | Mármol & Terrazo",
+    metaDescription:
+      "Pulido diamantado y vitrificado de pisos en Magdalena del Mar. Eliminación de ceras acumuladas y cristalizado antideslizante para departamentos y edificios.",
+    headline: "Pulido Diamantado y Vitrificado de Pisos en Magdalena",
+    subheadline:
+      "Renovación integral de pisos de mármol, terrazo y loseta en departamentos y recepciones de Magdalena del Mar. Trabajo limpio sin levantar polvo.",
+    targetArchitecture: "Edificios residenciales en Malecón Castagnola, Jr. Bolognesi, Av. Javier Prado Oeste y zonas tradicionales de Magdalena.",
+    predominantSubstrates: ["Terrazo Veneciano", "Loseta Granítica", "Mármol Crema Marfil", "Porcelanato"],
+    localProblemTitle: "Capas Amarillentas de Cera Antigua y Reflejo Opaco por Humedad",
+    localProblemDesc:
+      "El uso recurrente de ceras acrílicas o autobrillantes genera una costra pegajosa que atrapa polvo y se oscurece con la humedad costera. El piso se vuelve resbaladizo y pierde su estética mineral.",
+    engineeredSolutionTitle: "Decapado Mecánico al 100% y Cristalizado Directo al Mineral",
+    engineeredSolutionDesc:
+      "Removemos la totalidad de ceras viejas mediante pads abrasivos al agua. Luego pulimos con diamantes hasta abrir la superficie sana y sellamos con cristalizado termo-químico directo sobre la piedra.",
+    caseStudy: {
+      title: "Departamento Residencial en Javier Prado Oeste, Magdalena",
+      substrate: "Terrazo Veneciano Claro (110 m²)",
+      area: "110 m²",
+      challenge: "Cinco capas de cera amarillenta acumuladas y manchas opacas por limpiadores ácidos.",
+      solution: "Decapado mecánico completo, pulido diamantado en 6 granos y cristalizado de alta dureza.",
+      glossUnits: "89 GU (Reflejo Espejo)",
+      image: "/gallery/pulido-diamantado-damero-terrazo-hall.jpg",
+    },
+    faqs: [
+      {
+        question: "¿El tratamiento con cristalizado deja el piso resbaloso?",
+        answer:
+          "No. A diferencia de las ceras, el pulido diamantado y cristalizado rectifica el plano microscópico del mineral, aumentando la fricción en seco y cumpliendo normas de coeficiente antideslizante.",
+      },
+      {
+        question: "¿Cuánto tiempo demora el servicio en un departamento de Magdalena?",
+        answer:
+          "Para un metraje promedio de 70 a 120 m², el trabajo se ejecuta habitualmente en 2 a 3 días, dejando los ambientes transitables y limpios.",
+      },
+    ],
+    geo: {
+      latitude: -12.0911,
+      longitude: -77.0706,
+    },
+  },
+
+  "pulido-de-pisos-san-miguel": {
+    id: "san-miguel",
+    slug: "pulido-de-pisos-san-miguel",
+    name: "San Miguel",
+    title: "Pulido de Pisos y Sellado Bristone® en San Miguel | Concreto & Terrazo",
+    metaDescription:
+      "Servicio de pulido diamantado, cristalizado y sellado densificador en San Miguel (Costanera, Maranga, Av. La Marina). Residencias, comercios e industrias.",
+    headline: "Pulido Diamantado y Densificado de Pisos en San Miguel",
+    subheadline:
+      "Tratamiento profesional para terrazo, concreto y mármol en condominios, locales comerciales y viviendas en San Miguel. Cero polvo y garantía escrita.",
+    targetArchitecture: "Condominios en Costanera y Bertolotto, residencias en Maranga y locales en ejes comerciales de Av. La Marina.",
+    predominantSubstrates: ["Terrazo Bicolor", "Concreto Pulido", "Loseta de Cemento", "Mármol"],
+    localProblemTitle: "Desgaste por Tránsito y Erosión por Brisa Marina en la Costa de San Miguel",
+    localProblemDesc:
+      "Los condominios en el eje Costanera y las viviendas de San Miguel sufren el impacto combinado del tránsito continuo y la salinidad del mar, provocando porosidad abierta y empolvado en superficies de concreto y terrazo.",
+    engineeredSolutionTitle: "Densificado con Silicatos e Intercambio Iónico (Sistema Bristone®)",
+    engineeredSolutionDesc:
+      "Desbaste plano para eliminar imperfecciones seguido de la aplicación de densificador penetrante Bristone® Concret Sealer. La reacción de intercambio iónico endurece la matriz mineral por dentro y evita el desprendimiento de polvo.",
+    caseStudy: {
+      title: "Hall de Ingreso y Sala en Condominio Costanera, San Miguel",
+      substrate: "Terrazo Veneciano y Concreto Mastercron (135 m²)",
+      area: "135 m²",
+      challenge: "Empolvado superficial y pérdida de lustre por abrasión pedestre y salitre costero.",
+      solution: "Diamantado con desbaste progresivo, densificado con silicato alcalino e hidropulido con abrillantador.",
+      glossUnits: "88 GU (Acabado Satinado Espejo)",
+      image: "/gallery/restauracion-loseta-granitica-terrazo-amarillo.jpg",
+    },
+    faqs: [
+      {
+        question: "¿Qué producto usan para evitar que el piso de concreto o terrazo siga botando polvo?",
+        answer:
+          "Aplicamos densificadores a base de silicatos que penetran la superficie y reaccionan químicamente para cerrar los poros capilares, deteniendo el empolvado permanentemente sin formar películas plásticas.",
+      },
+      {
+        question: "¿Atienden locales comerciales en San Miguel con turnos especiales?",
+        answer:
+          "Sí, operamos en horarios nocturnos o fines de semana para entregar áreas transitables al inicio de la jornada comercial.",
+      },
+    ],
+    geo: {
+      latitude: -12.0772,
+      longitude: -77.0864,
     },
   },
 };

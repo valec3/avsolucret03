@@ -132,7 +132,7 @@ const TerminosCondiciones = () => {
                 </p>
                 <ul className="list-disc pl-5 space-y-1.5 text-anthracite-600">
                   <li><strong>Reflectómetro Digital a 60°:</strong> Se garantiza el alcance del umbral pactado (hasta <strong>92–95 GU</strong> para acabado Espejo Mecánico en mármol y terrazo).</li>
-                  <li><strong>Ensayo de Repelencia Líquida:</strong> Tras el curado de <em>AV-SHIELD™ Ultra</em>, se constata el efecto hidrofóbico con gota perlada (ángulo de contacto &gt; 110°).</li>
+                  <li><strong>Ensayo de Repelencia Líquida:</strong> Tras el curado de los tratamientos de sellado penetrante y densificado, se constata la reducción de porosidad y repelencia superficial.</li>
                   <li><strong>Homogeneidad Cromática:</strong> En reparaciones epóxicas de terrazo veneciano o fisuras de mármol, se valida la integración de grano mineral con el piso original.</li>
                 </ul>
               </section>
@@ -145,7 +145,7 @@ const TerminosCondiciones = () => {
                   Póliza de Garantía Escrita por 5 Años
                 </h2>
                 <p>
-                  Los tratamientos que incluyen la aplicación integral del sellador nanométrico <em>AV-SHIELD™ Ultra</em> cuentan con un <strong>Certificado de Garantía Escrita por 5 Años</strong> contra deslaminación, descascaramiento y decoloración solar, sujeto al cumplimiento de las pautas de limpieza neutra entregadas al cliente.
+                  Los tratamientos que incluyen la aplicación integral de selladores penetrantes y densificadores profesionales cuentan con un <strong>Certificado de Garantía Escrita por 5 Años</strong> contra deslaminación, descascaramiento y decoloración solar, sujeto al cumplimiento de las pautas de limpieza neutra entregadas al cliente.
                 </p>
                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs">
                   <strong>Exclusiones de la Garantía:</strong> La garantía quedará sin efecto en caso de derrame no limpiado de ácidos industriales concentrados (ácido muriático, fluorhídrico), arrastre violento de maquinaria pesada sin protección o manipulación no autorizada con ceras acrílicas o químicos corrosivos.

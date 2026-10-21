@@ -5,20 +5,20 @@ export const ctaData = {
     "Atendemos viviendas, edificios, oficinas, hoteles y locales comerciales con opciones adaptadas a su requerimiento:",
   residential: {
     badge: "RESIDENCIAL",
-    title: "Cotización sin costo",
-    text: "Mándenos una foto de su piso por WhatsApp y le damos un estimado el mismo día.",
-    buttonText: "Cotizar por WhatsApp (Residencial)",
+    title: "Evaluación técnica personalizada",
+    text: "Mándenos una foto o metraje de su piso por WhatsApp y le brindamos una orientación técnica el mismo día.",
+    buttonText: "Consultar por WhatsApp (Residencial)",
     whatsappMessage:
-      "Hola AV Solucret, deseo una cotización sin costo para mi vivienda. Les adjunto la foto de mi piso para recibir un estimado hoy mismo.",
+      "Hola AV Solucret, deseo una evaluación técnica para mi vivienda. Les adjunto la foto de mi piso para recibir una propuesta hoy mismo.",
   },
   corporate: {
     badge: "EMPRESAS",
-    title: "Diagnóstico técnico sin costo",
-    text: "Visitamos su local y entregamos una propuesta con metraje, tratamiento recomendado y precio por m².",
-    buttonText: "Solicitar Diagnóstico Técnico (Empresas)",
+    title: "Inspección técnica especializada",
+    text: "Visitamos sus instalaciones y entregamos una propuesta integral con metraje, plan de intervención y cronograma de obra.",
+    buttonText: "Solicitar Inspección Técnica (Empresas)",
     whatsappMessage:
-      "Hola AV Solucret, represento a una empresa/local y requiero coordinar un diagnóstico técnico sin costo para visita y propuesta por m².",
+      "Hola AV Solucret, represento a una empresa/local y requiero coordinar una inspección técnica in situ para una propuesta personalizada.",
   },
-  whatsappButtonText: "Cotizar por WhatsApp",
+  whatsappButtonText: "Consultar por WhatsApp",
   callButtonText: "Llamar al 961 801 932",
 };

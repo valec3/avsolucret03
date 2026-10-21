@@ -439,8 +439,7 @@ const Trabajos = () => {
               ¿Tiene un proyecto con especificaciones complejas?
             </h2>
             <p className="font-sans text-sm sm:text-base text-anthracite-500 leading-relaxed max-w-2xl mx-auto mb-10">
-              Coordinamos una prueba física de reflectometría en su propia obra sin costo ni
-              compromiso. Compruebe la diferencia real entre una cera y el diamante puro.
+              Coordinamos una prueba física de reflectometría en su propia obra. Compruebe la diferencia real entre una cera y el diamante puro.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">

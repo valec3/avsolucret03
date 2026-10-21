@@ -10,14 +10,14 @@ const WhatsAppButton = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 0.8, type: "spring", stiffness: 200 }}
-      className="fixed bottom-6 right-6 z-50 group flex items-center select-none"
+      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 group flex items-center select-none"
       aria-label="Contactar a AV SOLUCRET por WhatsApp"
     >
       {/* Tooltip con alto contraste y UX clara */}
       <div className="hidden sm:flex items-center gap-2 mr-3 px-3.5 py-2 rounded-xl bg-anthracite-900/95 backdrop-blur-md text-white text-xs font-heading font-medium border border-slate-700/60 shadow-ambient opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none">
         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
         <span className="text-anthracite-200">En línea:</span>
-        <strong className="text-white font-semibold">Evaluación In Situ Gratuita</strong>
+        <strong className="text-white font-semibold">Evaluación In Situ Especializada</strong>
       </div>
 
       {/* Contenedor Circular Aislado (56x56px) para el botón y sus efectos */}

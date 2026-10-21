@@ -267,6 +267,54 @@
     </image:image>
   </url>
 
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-san-borja</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/cristalizado-marmol-penthouse-vista-panoramica.jpg</image:loc>
+      <image:title>Pulido y Cristalizado de Pisos en San Borja - AV SOLUCRET</image:title>
+      <image:caption>Servicio in situ de pulido diamantado y cristalizado de mármol y terrazo en San Borja</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-barranco</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/vitrificado-sellado-mosaicos-decorativos-terraza.jpg</image:loc>
+      <image:title>Restauración de Mosaicos y Terrazo en Barranco - AV SOLUCRET</image:title>
+      <image:caption>Restauración de mosaicos empastados y casonas patrimoniales en Barranco</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-magdalena</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/pulido-diamantado-damero-terrazo-hall.jpg</image:loc>
+      <image:title>Pulido y Vitrificado de Pisos en Magdalena - AV SOLUCRET</image:title>
+      <image:caption>Decapado total de ceras y cristalizado antideslizante en departamentos de Magdalena</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avsolucret.com/zonas/pulido-de-pisos-san-miguel</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://avsolucret.com/gallery/restauracion-loseta-granitica-terrazo-amarillo.jpg</image:loc>
+      <image:title>Pulido y Densificado de Pisos en San Miguel - AV SOLUCRET</image:title>
+      <image:caption>Tratamiento con Sistema Bristone y pulido diamantado en San Miguel</image:caption>
+    </image:image>
+  </url>
+
   <!-- Legal & Regulatory Pages -->
   <url>
     <loc>https://avsolucret.com/politica-de-privacidad</loc>

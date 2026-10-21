@@ -80,9 +80,13 @@ const Footer = () => {
                 const districtSlugMap: Record<string, string> = {
                   "San Isidro": "/zonas/pulido-de-pisos-san-isidro",
                   "Miraflores": "/zonas/pulido-de-pisos-miraflores",
+                  "San Borja": "/zonas/pulido-de-pisos-san-borja",
                   "Surco": "/zonas/pulido-de-pisos-surco",
                   "Santiago de Surco": "/zonas/pulido-de-pisos-surco",
                   "La Molina": "/zonas/pulido-de-pisos-la-molina",
+                  "Barranco": "/zonas/pulido-de-pisos-barranco",
+                  "Magdalena": "/zonas/pulido-de-pisos-magdalena",
+                  "San Miguel": "/zonas/pulido-de-pisos-san-miguel",
                 };
                 const href = districtSlugMap[district];
 

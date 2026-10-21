@@ -118,7 +118,7 @@ const ServicesSection = () => {
 
                 <div className="flex items-center gap-1 text-[11px] font-mono text-anthracite-600 font-semibold">
                   <ShieldCheck className="w-3.5 h-3.5 text-gold-600" />
-                  <span>Sin costo</span>
+                  <span>Evaluación formal</span>
                 </div>
               </div>
             </motion.div>
@@ -129,10 +129,10 @@ const ServicesSection = () => {
         <div className="mt-16 p-6 sm:p-8 rounded-2xl bg-surface-low border border-slate-200 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-left">
             <h4 className="font-heading text-base font-bold text-anthracite-900">
-              ¿Desea cotizar o agendar una visita técnica para su piso o encimera?
+              ¿Desea solicitar una propuesta o agendar una visita técnica para su piso o encimera?
             </h4>
             <p className="text-xs text-anthracite-600 mt-0.5">
-              Para viviendas le damos un estimado el mismo día por WhatsApp. Para empresas visitamos su local sin costo.
+              Para viviendas brindamos una evaluación el mismo día por WhatsApp. Para empresas coordinamos inspección técnica en sus instalaciones.
             </p>
           </div>
 
@@ -142,7 +142,7 @@ const ServicesSection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-diamond-600 hover:bg-diamond-500 text-white font-heading font-bold text-xs sm:text-sm shrink-0 shadow-sm transition-all"
           >
-            <span>Cotizar por WhatsApp</span>
+            <span>Consultar por WhatsApp</span>
             <ArrowRight className="w-4 h-4 ml-2" />
           </a>
         </div>

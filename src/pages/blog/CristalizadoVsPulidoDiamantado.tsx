@@ -215,7 +215,7 @@ const CristalizadoVsPulidoDiamantado = () => {
                   <strong>Fase Inicial Reconstructiva:</strong> Pulido Diamantado con aspiración ciclónica para llevar la roca a una planimetría perfecta y abrir el poro microscópico hasta grano 1500/3000.
                 </li>
                 <li>
-                  <strong>Fase de Blindaje:</strong> Aplicación de nanopolímero oleofóbico penetrante <em>AV-SHIELD™ Ultra</em> para cerrar la red capilar.
+                  <strong>Fase de Sellado Penetrante:</strong> Aplicación de sellador penetrante y densificador para consolidar la superficie y reducir la red capilar.
                 </li>
                 <li>
                   <strong>Fase de Sellado Térmico Opcional:</strong> Si el cliente busca reflectometría superior a 95 GU de vitrina comercial, se ejecuta el cristalizado termo-químico con pad especial sobre la superficie ya impecable.
@@ -229,7 +229,7 @@ const CristalizadoVsPulidoDiamantado = () => {
           <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-anthracite-900 to-anthracite-800 text-white shadow-ambient">
             <div className="max-w-2xl">
               <span className="text-[10px] font-mono font-bold text-gold-400 tracking-widest uppercase">
-                DIAGNÓSTICO EN SITU SIN COSTO
+                DIAGNÓSTICO TÉCNICO IN SITU
               </span>
               <h3 className="font-heading text-2xl font-extrabold text-white mt-1 mb-3">
                 ¿Tu piso necesita restauración diamantada o solo vitrificado?

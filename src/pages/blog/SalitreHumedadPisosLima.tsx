@@ -165,14 +165,13 @@ const SalitreHumedadPisosLima = () => {
 
                 <div className="p-5 bg-surface-low rounded-xl border border-slate-200">
                   <div className="font-heading text-sm font-bold text-anthracite-900 mb-1">
-                    Fase 2: Blindaje Nanométrico Hidrofugante con AV-SHIELD™ Ultra
+                    Fase 2: Sellado Penetrante e Intercambio Iónico
                   </div>
                   <p className="text-xs text-anthracite-500 leading-relaxed">
-                    A diferencia de los barnices o siliconas comerciales que crean películas plásticas que se
-                    descascaran, <strong>AV-SHIELD™ Ultra</strong> penetra hasta 8 milímetros en los capilares.
-                    Sus nanopartículas modifican la tensión superficial: la piedra se vuelve 100% repelente al agua
-                    líquida (el agua forma gotas redondas que resbalan), pero mantiene un 100% de permeabilidad al
-                    vapor. Al no ingresar agua, el salitre no puede volver a cristalizar.
+                    A diferencia de los barnices o siliconas comerciales que crean películas superficiales que se
+                    descascaran o amarillean, el tratamiento penetra en la estructura del piso y reduce la porosidad mediante
+                    intercambio iónico. La penetración profunda no forma película ni altera la textura antideslizante,
+                    consolidando el mineral y reduciendo la absorción capilar que transporta las sales.
                   </p>
                 </div>
               </div>
@@ -190,7 +189,7 @@ const SalitreHumedadPisosLima = () => {
                   ¿Sus pisos presentan manchas blancas o salitre recurrente?
                 </h3>
                 <p className="text-xs text-anthracite-500 max-w-lg">
-                  Coordinamos un diagnóstico in situ con kit de humedad y prueba de absorción sin costo en Lima.
+                  Coordinamos un diagnóstico in situ con kit de humedad y prueba de absorción en Lima.
                 </p>
               </div>
 

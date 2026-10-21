@@ -115,23 +115,23 @@ export const routesSeoData: Record<string, RouteSeoConfig> = {
     path: "/contacto",
     title: "Contacto y Cotización de Pulido de Pisos en Lima",
     description:
-      "Solicita diagnóstico técnico gratuito en tu domicilio o empresa. Atención directa en San Isidro, Miraflores, Santiago de Surco, San Borja, La Molina y todo Lima.",
+      "Solicita diagnóstico técnico especializado en tu domicilio o empresa. Atención directa en San Isidro, Miraflores, Santiago de Surco, San Borja, La Molina y todo Lima.",
     canonical: "https://avsolucret.com/contacto",
     type: "website",
     image: "https://avsolucret.com/general/piso-marmol.webp",
     keywords: [
       "cotizar pulido pisos lima",
       "telefono av solucret",
-      "diagnostico marmol gratuito lima",
+      "diagnostico tecnico marmol lima",
       "presupuesto restauracion pisos",
     ],
     breadcrumbs: [
       { name: "Inicio", path: "/" },
       { name: "Contacto", path: "/contacto" },
     ],
-    fallbackH1: "Solicite Diagnóstico Técnico Gratuito y Cotización",
+    fallbackH1: "Solicite Diagnóstico Técnico Especializado y Propuesta",
     fallbackSummary:
-      "Comuníquese con nuestros ingenieros y especialistas para agendar una inspección técnica in situ sin costo en Lima Metropolitana.",
+      "Comuníquese con nuestros ingenieros y especialistas para agendar una inspección técnica in situ en Lima Metropolitana.",
   },
   "/blog": {
     path: "/blog",
@@ -423,5 +423,77 @@ export const routesSeoData: Record<string, RouteSeoConfig> = {
     fallbackH1: "Restauración de Piedras Rústicas, Lajas y Mármol en La Molina",
     fallbackSummary:
       "Decapado termomecánico de ceras quemadas por radiación UV y sellado nanométrico hidrofugante para terrazas en La Molina.",
+  },
+  "/zonas/pulido-de-pisos-san-borja": {
+    path: "/zonas/pulido-de-pisos-san-borja",
+    title: "Pulido y Cristalizado de Pisos en San Borja | Mármol & Terrazo sin Polvo",
+    description:
+      "Servicio especializado de pulido diamantado y cristalizado de mármol y terrazo en San Borja (Chacarilla, San Borja Norte y Sur). Cero polvo con turbina HEPA.",
+    canonical: "https://avsolucret.com/zonas/pulido-de-pisos-san-borja",
+    type: "website",
+    image: "https://avsolucret.com/gallery/cristalizado-marmol-penthouse-vista-panoramica.jpg",
+    keywords: ["pulido de marmol san borja", "cristalizado de pisos san borja", "pulido travertino chacarilla", "pulido diamantado departamentos san borja"],
+    breadcrumbs: [
+      { name: "Inicio", path: "/" },
+      { name: "Zonas de Atención", path: "/contacto" },
+      { name: "San Borja", path: "/zonas/pulido-de-pisos-san-borja" },
+    ],
+    fallbackH1: "Pulido Diamantado y Cristalizado de Pisos en San Borja",
+    fallbackSummary:
+      "Intervención técnica in situ para departamentos y residencias en San Borja. Protocolo en húmedo con aspiración continua sin polvo.",
+  },
+  "/zonas/pulido-de-pisos-barranco": {
+    path: "/zonas/pulido-de-pisos-barranco",
+    title: "Restauración de Pisos en Barranco | Mosaicos, Terrazo y Mármol Histórico",
+    description:
+      "Restauración patrimonial y pulido de pisos en Barranco. Especialistas en mosaicos empastados, terrazo veneciano y casonas frente al mar con protección contra el salitre.",
+    canonical: "https://avsolucret.com/zonas/pulido-de-pisos-barranco",
+    type: "website",
+    image: "https://avsolucret.com/gallery/vitrificado-sellado-mosaicos-decorativos-terraza.jpg",
+    keywords: ["restauracion de mosaicos barranco", "pulido de terrazo malecon barranco", "casonas patrimoniales barranco pisos", "sellado salitre mar barranco"],
+    breadcrumbs: [
+      { name: "Inicio", path: "/" },
+      { name: "Zonas de Atención", path: "/contacto" },
+      { name: "Barranco", path: "/zonas/pulido-de-pisos-barranco" },
+    ],
+    fallbackH1: "Restauración de Mosaicos, Terrazo y Mármol en Barranco",
+    fallbackSummary:
+      "Recuperación patrimonial de pisos clásicos en casonas y lofts de Barranco con sellado transpirable contra la humedad marina.",
+  },
+  "/zonas/pulido-de-pisos-magdalena": {
+    path: "/zonas/pulido-de-pisos-magdalena",
+    title: "Pulido y Vitrificado de Pisos en Magdalena del Mar | Mármol & Terrazo",
+    description:
+      "Pulido diamantado y vitrificado de pisos en Magdalena del Mar. Eliminación de ceras acumuladas y cristalizado antideslizante para departamentos y edificios.",
+    canonical: "https://avsolucret.com/zonas/pulido-de-pisos-magdalena",
+    type: "website",
+    image: "https://avsolucret.com/gallery/pulido-diamantado-damero-terrazo-hall.jpg",
+    keywords: ["pulido de pisos magdalena del mar", "decapado ceras terrazo magdalena", "cristalizado marmol malecon castagnola", "pulido losetas lima"],
+    breadcrumbs: [
+      { name: "Inicio", path: "/" },
+      { name: "Zonas de Atención", path: "/contacto" },
+      { name: "Magdalena", path: "/zonas/pulido-de-pisos-magdalena" },
+    ],
+    fallbackH1: "Pulido Diamantado y Vitrificado de Pisos en Magdalena",
+    fallbackSummary:
+      "Renovación integral de pisos de mármol, terrazo y loseta en departamentos de Magdalena del Mar con maquinaria sin polvo.",
+  },
+  "/zonas/pulido-de-pisos-san-miguel": {
+    path: "/zonas/pulido-de-pisos-san-miguel",
+    title: "Pulido de Pisos y Sellado Bristone® en San Miguel | Concreto & Terrazo",
+    description:
+      "Servicio de pulido diamantado, cristalizado y sellado densificador en San Miguel (Costanera, Maranga, Av. La Marina). Residencias, comercios e industrias.",
+    canonical: "https://avsolucret.com/zonas/pulido-de-pisos-san-miguel",
+    type: "website",
+    image: "https://avsolucret.com/gallery/restauracion-loseta-granitica-terrazo-amarillo.jpg",
+    keywords: ["pulido de pisos san miguel", "sellado bristone concreto san miguel", "pulido terrazo costanera", "mantenimiento pisos avenida la marina"],
+    breadcrumbs: [
+      { name: "Inicio", path: "/" },
+      { name: "Zonas de Atención", path: "/contacto" },
+      { name: "San Miguel", path: "/zonas/pulido-de-pisos-san-miguel" },
+    ],
+    fallbackH1: "Pulido Diamantado y Densificado de Pisos en San Miguel",
+    fallbackSummary:
+      "Tratamiento profesional para terrazo, concreto y mármol en condominios y locales de San Miguel con Sistema Bristone®.",
   },
 };

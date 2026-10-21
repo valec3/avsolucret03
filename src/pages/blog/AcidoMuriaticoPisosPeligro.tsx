@@ -180,9 +180,9 @@ const AcidoMuriaticoPisosPeligro = () => {
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-surface-low border border-slate-200">
-                  <span className="text-xs font-mono font-bold text-diamond-700">FASE 4: NANOSELLADO OLEOFÓBICO</span>
+                  <span className="text-xs font-mono font-bold text-diamond-700">FASE 4: SELLADO PENETRANTE OLEOFÓBICO</span>
                   <p className="text-xs text-anthracite-600 mt-1">
-                    Blindaje capilar con <em>AV-SHIELD™ Ultra</em> para que futuros derrames de vinagre, limón o desinfectantes no penetren el mineral.
+                    Sellado penetrante profesional para que futuros derrames de vinagre, limón o desinfectantes no penetren el mineral.
                   </p>
                 </div>
               </div>
@@ -200,7 +200,7 @@ const AcidoMuriaticoPisosPeligro = () => {
                 ¿Tu piso sufrió daño por ácido muriático o limpiadores corrosivos?
               </h3>
               <p className="text-xs text-anthracite-300 mb-6 leading-relaxed">
-                Envíanos una foto en primer plano de la mancha o zona afectada por WhatsApp. Nuestros ingenieros evaluarán la profundidad del ataque y te indicarán el protocolo de recuperación sin costo.
+                Envíanos una foto en primer plano de la mancha o zona afectada por WhatsApp. Nuestros ingenieros evaluarán la profundidad del ataque y te indicarán el protocolo de recuperación adecuado.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button

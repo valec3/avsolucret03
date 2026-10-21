@@ -107,7 +107,7 @@ const PoliticaPrivacidad = () => {
                       Diagnósticos y Presupuestos
                     </div>
                     <p className="text-xs text-anthracite-500">
-                      Elaborar fichas técnicas de intervención, cálculo de reflectometría estimada y visitas in situ sin costo.
+                      Elaborar fichas técnicas de intervención, cálculo de reflectometría estimada y visitas in situ de evaluación técnica.
                     </p>
                   </div>
                   <div className="p-3.5 rounded-xl bg-surface-low border border-slate-200/60">

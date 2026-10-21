@@ -36,8 +36,8 @@ export const testimonials: TestimonialItem[] = [
     stars: 5,
     title: "Cero polvo en muebles y paredes, un alivio total",
     comment:
-      "Mi mayor temor al pulir el piso de la sala y comedor era que el polvo fino invadiera los dormitorios. Su turbina de aspiración HEPA es impresionante: no dejaron ni un solo rastro en el aire ni en las cortinas. El sellado AV-SHIELD™ repele todo.",
-    work: "95 m² • Mármol Travertino • Sellado AV-SHIELD™ Ultra",
+      "Mi mayor temor al pulir el piso de la sala y comedor era que el polvo fino invadiera los dormitorios. Su turbina de aspiración HEPA es impresionante: no dejaron ni un solo rastro en el aire ni en las cortinas. El sellado y cristalizado repele derrames y dejó un acabado impecable.",
+    work: "95 m² • Mármol Travertino • Pulido Diamantado y Cristalizado",
   },
 ];
 
