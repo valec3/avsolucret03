@@ -39,15 +39,15 @@ export const productData = {
   description:
     "Tratamiento a base de silicatos que penetra la superficie, reduce la porosidad y endurece el piso mediante intercambio iónico, sin formar película. A diferencia de las ceras y acabados acrílicos, no deposita una capa que se desgaste: la reacción ocurre dentro del propio material y continúa durante los primeros meses posteriores a la aplicación.",
   inclusionBadge:
-    "Fabricado en Lima por Limpi Max S.A. · Incluido en los protocolos Plus y Premium",
+    "Fabricado en Lima · Incluido en los protocolos Plus y Premium",
   ctaText: "Solicitar evaluación de mi piso",
   ctaWhatsAppMessage:
     "Hola AV SOLUCRET, deseo solicitar una evaluación de mi piso para la aplicación del Sistema Bristone® (densificado y sellado penetrante).",
   image: "/products/sistema-bristone-terrazo-acabado.jpg",
   imageAlt:
-    "Piso de terrazo veneciano terminado con reflejo nítido y sellado densificador - Obra ejecutada por AV Solucret",
+    "Piso de terrazo veneciano terminado con reflejo nítido y sellado densificador - Imagen referencial",
   trademarkNotice:
-    "Bristone® es marca registrada del fabricante Limpi Max S.A. (San Miguel, Lima). AV Solucret aplica el sistema siguiendo estrictamente las especificaciones de sus hojas técnicas.",
+    "Bristone® es marca registrada. AV Solucret aplica el sistema siguiendo estrictamente las especificaciones de sus hojas técnicas.",
 };
 
 export const technicalSheets: TechnicalSheet[] = [

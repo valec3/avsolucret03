@@ -22,16 +22,19 @@ const ProductSection = () => {
               transition={{ duration: 0.5 }}
               className="lg:col-span-5 flex flex-col items-center justify-center"
             >
-              <div className="w-full max-w-md rounded-2xl overflow-hidden border border-slate-200/90 shadow-ambient bg-slate-50 aspect-[3/4] sm:aspect-[4/5] lg:aspect-[3/4]">
+              <div className="relative w-full max-w-md rounded-2xl overflow-hidden border border-slate-200/90 shadow-ambient bg-slate-50 aspect-[3/4] sm:aspect-[4/5] lg:aspect-[3/4]">
                 <img
                   src={productData.image}
                   alt={productData.imageAlt}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"
                   loading="lazy"
                 />
+                <span className="absolute bottom-3 left-3 bg-anthracite-950/75 backdrop-blur-md text-white text-[11px] font-heading font-semibold px-2.5 py-1 rounded-md tracking-wide">
+                  Imagen referencial
+                </span>
               </div>
               <p className="font-sans text-xs text-anthracite-500 mt-3 text-center font-medium">
-                Piso de terrazo veneciano terminado con reflejo nítido · Obra ejecutada por AV Solucret
+                Piso de terrazo veneciano terminado con reflejo nítido · Tratamiento con Sistema Bristone®
               </p>
             </motion.div>
 
@@ -86,7 +89,7 @@ const ProductSection = () => {
                   <div className="flex items-center gap-2.5">
                     <FileText className="w-4 h-4 text-diamond-700" />
                     <span className="font-heading text-xs sm:text-sm font-bold text-anthracite-900">
-                      Ver Ficha Técnica Oficial (Hojas Técnicas Limpi Max S.A.)
+                      Ver Ficha Técnica Oficial (Sistema Bristone®)
                     </span>
                   </div>
                   {showTechSheet ? (
