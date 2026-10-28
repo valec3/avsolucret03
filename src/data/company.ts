@@ -51,7 +51,7 @@ export const companyData = {
   tagline: "Recubrimientos y cristalizados de superficies",
   phone: "961 801 932",
   phoneDisplay: "961 801 932",
-  email: "contacto@avsolucret.com",
+  email: "ventas@avsolucret.com",
   office: "Jr. Aguarico 424, of. 210 · Breña, Lima",
   address: "Jr. Aguarico 424, of. 210, Breña, Lima",
   postalCode: "15082",
